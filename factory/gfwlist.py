@@ -4,6 +4,8 @@
 # 下载并解析最新版本的 GFWList
 # 对于混合性质的网站，尽量走代理（忽略了所有的@@指令）
 #
+# 从 https://github.com/Loyalsoldier/cn-blocked-domain 中获取GFWList的补充
+#
 
 
 import time
@@ -86,7 +88,10 @@ def filtrate_rules(rules):
 
     return ret
 
-
+# 从 https://github.com/Loyalsoldier/cn-blocked-domain 中获取GFWList的补充
+def getURLs(url):
+    r = requests.get(url)
+    return r.text.split("\n")[:-1]
 
 # main
 
@@ -95,6 +100,10 @@ rule = get_rule(rules_url)
 rules = clear_format(rule)
 
 rules = filtrate_rules(rules)
+
+rules.extend(getURLs('https://raw.githubusercontent.com/Loyalsoldier/cn-blocked-domain/release/domains.txt'))
+rules.extend('https://raw.githubusercontent.com/Loyalsoldier/cn-blocked-domain/release/ip.txt')
+rules = list( set(rules) )
 
 open('resultant/gfw.list', 'w', encoding='utf-8') \
     .write('\n'.join(rules))
