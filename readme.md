@@ -1,27 +1,42 @@
-## 最完善的 iOS 翻墙规则
+## 最完善的 iOS Shadowrocket规则
 
-### 停止更新公告
+### 试更新公告
 
-维护该项目已花费了我过多的时间，而生活中值得花费时间的东西太多，所以从即日起停止更新该项目。
+由于原作者[h2y](https://github.com/h2y)已停止维护[Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。
+
+### 写在前面 —— 请保护好自己
+
+谷歌中英文的搜索体验都优于百度，而刷美剧、ins 追星、去推特看看特朗普也都挺有意思。但是，随着看到的人和事越多，我越发想要在这里说一些话，告诫路过的各位：
+
+**请务必保护好自己** 我们自认为打破了信息的壁垒，其实打破的是保护我们的屏障。因为外网真的存在很多误导性言论，来自各个利益集团对中国网民疯狂洗脑，他们往往还喜欢以平等自由等旗号自称，但仔细想想真的是这样吗？我只知道美国是最善于运用舆论的国家，会结合大数据潜移默化地改变你的观念。如果大家在上网过程中不经意看到了某些观点，务必保留自己独立思考的能力，如果你是一个容易被带偏的人，则建议回到屏障之中。
+
+本规则只提供给大家用于更便捷地学习和工作。如果你是对上述观点持反对意见的极端政治人士，或者已被洗脑，请立即离开，本项目不对你开放。
 
 ------------------------------------------------------
 
-这里是一系列好用的翻墙规则，针对 [Shadowrocket](https://liguangming.com/Shadowrocket) 开发，支持广告过滤。规则定义了哪些网站可以直连，哪些必须走代理，规则是一个纯文本文件，无法提供翻墙功能。使用 Python 按照一定的规则和模板定期自动生成，并且使用开源的力量，集众人之力逐渐完善。
+这里是一系列好用的Shadowrocket规则，针对 [Shadowrocket](https://liguangming.com/Shadowrocket) 开发，支持广告过滤。规则定义了哪些网站可以直连，哪些必须走代理，规则是一个纯文本文件，无法提供翻墙功能。使用 Python 按照一定的规则和模板定期自动生成，并且使用开源的力量，集众人之力逐渐完善。
 
-**正在使用手机浏览本页面的用户 [请点击这里](https://github.com/h2y/Shadowrocket-ADBlock-Rules/blob/master/readme.md)，查看完整的说明文档。**
+**正在使用手机浏览本页面的用户 [请点击这里](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules/blob/master/readme.md)，查看完整的说明文档。**
 
 **本规则具有以下特点：**
 
-- 黑名单由最新版 GFWList 自动转换；白名单针对全球 top500 站点的连通情况定期自动生成。
-- 自动转换最新版本的 `EasyList, Eaylist China, 乘风规则` 为 SR 规则，全面去除广告且去除重复。
-- 也包括自定义的广告过滤规则，针对 iOS 端的网页广告、App 广告和视频广告。（[常见广告过滤效果统计](https://github.com/h2y/Shadowrocket-ADBlock-Rules/issues/40)）
+- 黑名单由最新版 [GFWList](https://github.com/gfwlist/gfwlist) 自动转换；加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名；增加了白名单针对全球 top500 站点的连通情况定期自动生成。
+- 自动转换最新版本的 `EasyList, Eaylist China, Peter Lowe 广告和隐私跟踪域名` 为 SR 规则，全面去除广告且去除重复。
+- 也包括自定义的广告过滤规则，针对 iOS 端的网页广告、App 广告和视频广告。
 - 提供多个规则文件让大家自由选择或者自由切换使用。
 - 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性。
+- 将[Apple域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf)加入直连
+
+
+**我们做了如下改动：**
+- 增加了 [Peter Lowe](https://pgl.yoyo.org/adservers/) 广告和隐私跟踪域名
+- 加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名
+- 将[Apple域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf)加入直连
 
 
 ## 规则列表
 
-![规则选择指南](https://h2y.github.io/Shadowrocket-ADBlock-Rules/figure/guide.png)
+![规则选择指南](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules/blob/master/figure/guide.png)
 
 规则 | 规定代理的网站 | 规定直连的网站 
 --- | ----------- | ------------- 
@@ -46,38 +61,19 @@
 最好让 ShadowRocket 断开并重新连接一次，以确保新的规则文件生效。 
 
 
-## 请保护好自己
-
-谷歌中英文的搜索体验都优于百度，而刷美剧、ins 追星、去推特看看特朗普也都挺有意思。但是，随着看到的人和事越多，我越发想要在这里说一些话，告诫路过的各位：
-
-**请务必保护好自己** 我们自认为打破了信息的壁垒，其实打破的是保护我们的屏障。因为外网真的存在很多误导性言论，来自各个利益集团对中国网民疯狂洗脑，他们往往还喜欢以平等自由等旗号自称，但仔细想想真的是这样吗？我只知道美国是最善于运用舆论的国家，会结合大数据潜移默化地改变你的观念。如果大家在上网过程中不经意看到了某些观点，务必保留自己独立思考的能力，如果你是一个容易被带偏的人，则建议回到屏障之中。
-
-本规则只提供给大家用于更便捷地学习和工作。如果你是对上述观点持反对意见的极端政治人士，或者已被洗脑，请立即离开，本项目不对你开放。
-
-
 ## 一些推荐的网站
-
-[**糖客翻墙网**](https://cutt.ly/hhw1ZTi)	:lollipop:
-
-我最终选择的节点提供商。稳定、价格适中。节点遍布全球，提供 iPLC 路线。欢迎大家通过我的邀请链接前去使用。
-
-iPLC 隧道不经过拥堵的公网出国、不经过防火墙，是目前最优秀的路线，速度谁用谁知道，建议选择。
 
 **[IP111](http://ip111.cn/)**
 
 这是一个很棒的 IP 查询网站，支持同时查询你的境内境外 IP，以及谷歌 IP。
 
-**[wikiHow](https://zh.wikihow.com/)**
-
-如何帮助心碎的朋友？如何给吊扇加油？你想知道的一切都可以在这里找到答案，最关键是采用漫画的方式挺有意思。
-
-**[Google Photos](https://www.google.com/photos/about/)**
-
-谷歌云相册提供无限空间保存手机中的日常照片，并且会对照片智能分类，体验很好。
-
 **<https://hzy.pw/>**
 
-我是一名大学生，沉迷技术无法自拔。这是我的个人博客，会分享一些有趣的东西和自己的观点，欢迎来逛逛~
+原作者的博客：我是一名大学生，沉迷技术无法自拔。这是我的个人博客，会分享一些有趣的东西和自己的观点，欢迎来逛逛~
+
+**<https://blog.ncbadboy.ml>**
+
+我是个业余的开发者，喜欢生命和阳光
 
 
 ## 常见问题
@@ -106,13 +102,13 @@ iPLC 隧道不经过拥堵的公网出国、不经过防火墙，是目前最优
 
 ## 问题反馈
 
-任何问题欢迎在 [Issues](https://github.com/h2y/Shadowrocket-ADBlock-Rules/issues) 中反馈，如果没有账号可以去 [我的网站](https://hzy.pw/p/2096#comments) 中留言。
+任何问题欢迎在 [Issues](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules/issues) 中反馈，如果没有账号可以去 [我的网站](https://blog.ncbadboy.ml) 中留言。
 
 你的反馈会让此规则变得更加完美。
 
 **如何贡献代码？**
 
-通常的情况下，对 [factory 目录](https://github.com/h2y/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
+通常的情况下，对 [factory 目录](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
 
 
 ## 捐助
