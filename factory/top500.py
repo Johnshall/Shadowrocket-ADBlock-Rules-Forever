@@ -5,6 +5,7 @@ import threading
 import time
 import sys
 import requests
+import re
 
 
 urls = ['http://alexa.chinaz.com/Global/index.html']
@@ -138,6 +139,14 @@ now_time = time.strftime("%Y-%m-%d %H:%M:%S")
 file_proxy.write('# top500 proxy list update time: ' + now_time + '\n')
 file_direct.write('# top500 direct list update time: ' + now_time + '\n')
 
+
+# 将苹果IP加入直连
+r = requests.get(url="https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf", headers=requests_header)
+for url in r.text.split("\n")[:-1]:
+    url = re.sub(r'(server=\/)', '', url)   # 清除前缀
+    url = re.sub(r'(/114.114.114.114)', '', url)   # 清除后缀
+    domains_direct.append(url)
+
 domains_direct = list( set(domains_direct) )
 domains_proxy  = list( set(domains_proxy) )
 domains_direct.sort()
@@ -147,4 +156,3 @@ for domain in domains_direct:
     file_direct.write(domain+'\n')
 for domain in domains_proxy:
     file_proxy.write(domain+'\n')
-
