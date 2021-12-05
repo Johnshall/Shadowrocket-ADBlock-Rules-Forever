@@ -31,9 +31,9 @@ GFWList 不能无损转换为 SR 规则，所以这里是对 GFWList 的补充�
 
 ## 代码及自动生成的文件
 
-**resultant/top500_direct.list** 
+**resultant/top50_direct.list** 
 
-域名列表，由 `top500.py` 自动生成。记录着前 500 网站中所有可直连网站的域名，并已排除了以 `.cn` 结尾的域名。
+域名列表，由 `top50.py` 自动生成。记录着前 50 网站中所有可直连网站的域名。
 
 **resultant/top500_proxy.list** 
 
