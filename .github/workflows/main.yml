@@ -26,7 +26,7 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: master
-          BRANCH: gh-pages
+          BRANCH: Development
           FOLDER: .
           commit-message : 'Nightly build'
           
