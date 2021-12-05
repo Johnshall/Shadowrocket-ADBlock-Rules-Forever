@@ -7,10 +7,10 @@ import os
 # confs names in template/ and ../
 # except sr_head and sr_foot
 confs_names = [
-    'sr_top50_banlist_ad',
-    'sr_top50_banlist',
-    'sr_top50_whitelist_ad',
-    'sr_top50_whitelist',
+    'sr_top500_banlist_ad',
+    'sr_top500_banlist',
+    'sr_top500_whitelist_ad',
+    'sr_top500_whitelist',
     'sr_adb',
     'sr_direct_banad',
     'sr_proxy_banad',
