@@ -39,7 +39,7 @@
 
 ## 规则列表
 
-![规则选择指南](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules/blob/master/figure/guide.png)
+![规则选择指南](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/guide.png)
 
 规则 | 规定代理的网站 | 规定直连的网站 
 --- | ----------- | ------------- 
@@ -70,11 +70,11 @@
 
 这是一个很棒的 IP 查询网站，支持同时查询你的境内境外 IP，以及谷歌 IP。
 
-**<https://hzy.pw/>**
+**<https://hzy.pw>**
 
 原作者的博客：我是一名大学生，沉迷技术无法自拔。这是我的个人博客，会分享一些有趣的东西和自己的观点，欢迎来逛逛~
 
-**<https://www.hfdem.net>**
+**<https://www.hfdem.net>**  
 一位永远鼓励着我前进并给予我帮助的大佬的博客。
 
 **<https://blog.ncbadboy.ml>**
