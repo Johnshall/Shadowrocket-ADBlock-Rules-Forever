@@ -2,7 +2,7 @@
 
 ### 试更新公告
 
-由于原作者[h2y](https://github.com/h2y)已停止维护[Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。
+由于原作者[h2y](https://github.com/h2y)已停止维护[Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。**所有规则都会在每天 UTC 8:00 更新发布。**
 
 ### 写在前面 —— 请保护好自己
 
@@ -16,7 +16,7 @@
 
 这里是一系列好用的Shadowrocket规则，针对 [Shadowrocket](https://liguangming.com/Shadowrocket) 开发，支持广告过滤。规则定义了哪些网站可以直连，哪些必须走代理，规则是一个纯文本文件，无法提供翻墙功能。使用 Python 按照一定的规则和模板定期自动生成，并且使用开源的力量，集众人之力逐渐完善。
 
-**正在使用手机浏览本页面的用户 [请点击这里](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules/blob/master/readme.md)，查看完整的说明文档。**
+**正在使用手机浏览本页面的用户 [请点击这里](https://johnshall.github.io/Shadowrocket-ADBlock-Rules)，查看完整的说明文档。**
 
 **本规则具有以下特点：**
 
@@ -31,9 +31,10 @@
 **我们做了如下改动：**
 - 增加了 [Peter Lowe](https://pgl.yoyo.org/adservers/) 广告和隐私跟踪域名
 - 加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名
+- 将[Apple及其CDN域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf)加入直连
+- 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，由于该名单随时间变化不大，故没有进行改动
 - 将[Apple域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf)加入直连
-- 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，所以所有关于 top 500 的规则已不再更新，这里仅做备份使用
-- 我们根据世界排名 top 50 网站列表重新生成了新的规则，并加入[苹果及其CDN域名](https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf)
+- **所有发布的规则都会在每天 UTC 8:00 更新发布**
 
 
 ## 规则列表
@@ -73,9 +74,12 @@
 
 原作者的博客：我是一名大学生，沉迷技术无法自拔。这是我的个人博客，会分享一些有趣的东西和自己的观点，欢迎来逛逛~
 
+**<https://www.hfdem.net>**
+一位永远鼓励着我前进并给予我帮助的大佬的博客。
+
 **<https://blog.ncbadboy.ml>**
 
-我是个业余的开发者，喜欢生命和阳光
+我是个业余的开发者，喜欢生命和阳光。
 
 
 ## 常见问题
@@ -124,7 +128,7 @@
 
 ----------------------------------------
 
-## 黑名单过滤 + 广告 (仅备份)
+## 黑名单过滤 + 广告
 
 黑名单中包含了境外网站中无法访问的那些，对不确定的网站则默认直连。
 
@@ -132,11 +136,11 @@
 - 直连：正常的网站
 - 包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_top500_banlist_ad.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_top500_banlist_ad.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_top500_banlist_ad.png)
 
-## 白名单过滤 + 广告 (仅备份)
+## 白名单过滤 + 广告
 
 白名单中包含了境外网站中可以访问的那些，对不确定的网站则默认代理。
 
@@ -144,12 +148,12 @@
 - 代理：默认代理其余的所有境外网站
 - 包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_top500_whitelist_ad.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_top500_whitelist_ad.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_top500_whitelist_ad.png)
 
 
-## 黑名单过滤 (仅备份)
+## 黑名单过滤
 
 现在很多浏览器都自带了广告过滤功能，而广告过滤的规则其实较为臃肿，如果你不需要全局地过滤 App 内置广告和视频广告，可以选择这个不带广告过滤的版本。
 
@@ -157,12 +161,12 @@
 - 直连：正常的网站
 - 不包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_top500_banlist.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_top500_banlist.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_top500_banlist.png)
 
 
-## 白名单过滤 (仅备份)
+## 白名单过滤
 
 现在很多浏览器都自带了广告过滤功能，而广告过滤的规则其实较为臃肿，如果你不需要全局地过滤 App 内置广告和视频广告，可以选择这个不带广告过滤的版本。
 
@@ -170,27 +174,27 @@
 - 代理：默认代理其余的所有境外网站
 - 不包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_top500_whitelist.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_top500_whitelist.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_top500_whitelist.png)
 
 
 ## 国内外划分 + 广告
 
 国内外划分，对中国网站直连，外国网站代理。包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_cnip_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_cnip_ad.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_cnip_ad.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_cnip_ad.png)
 
 
 ## 国内外划分
 
 国内外划分，对中国网站直连，外国网站代理。不包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_cnip.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_cnip.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_cnip.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_cnip.png)
 
 
 ## 直连去广告
@@ -200,9 +204,9 @@
 - 直连：所有请求
 - 包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_direct_banad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_direct_banad.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_direct_banad.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_direct_banad.png)
 
 
 ## 代理去广告
@@ -213,9 +217,9 @@
 - 代理：其余所有请求
 - 包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_proxy_banad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_proxy_banad.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_proxy_banad.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_proxy_banad.png)
 
 
 ## 回国规则
@@ -226,9 +230,9 @@
 - 代理：中国网站
 - 不包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_backcn.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_backcn.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_backcn.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_backcn.png)
 
 
 ## 回国规则 + 广告
@@ -239,6 +243,10 @@
 - 代理：中国网站
 - 包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/sr_backcn_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_backcn_ad.conf>
 
-![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_backcn_ad.png)
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_backcn_ad.png)
+
+### 鸣谢：
+感谢 [@h2y](https://github.com/h2y)及所有给予[Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)无私帮助的社区开发者们；  
+感谢 [@hfdem](https://github.com/hfdem)给予我的帮助、肯定与支持！
