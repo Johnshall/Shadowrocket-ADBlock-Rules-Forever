@@ -22,10 +22,10 @@ jobs:
         run: ./factory/auto_build.sh
         
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@master
+        uses: JamesIves/github-pages-deploy-action@4.1.7
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: master # 要部署的文件夹所在的分支.
+          BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: .
           commit-message : 'Nightly build'
