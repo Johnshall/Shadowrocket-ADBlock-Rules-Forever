@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  schedule:
+    # 每日7时开始
+    - cron:  '0 7 * * *'
+
+  # 可手动出发
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Install requirements
+        run: pip3 install -r requirements.txt
+
+      - name: Run auto-build.sh
+        run: ./factory/auto_build.sh
+        
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BASE_BRANCH: master # 要部署的文件夹所在的分支.
+          BRANCH: gh-pages
+          FOLDER: .
+          commit-message : 'Nightly build'
+          
