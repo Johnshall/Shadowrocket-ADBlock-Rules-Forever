@@ -94,7 +94,7 @@ for url in r.text.split("\n")[:-1]:
 
 # write files
 file_proxy = open('resultant/top50_proxy.list', 'w', encoding='utf-8')
-file_direct = open('resultant/top50_direct_with_Apple.list', 'w', encoding='utf-8')
+file_direct = open('resultant/top50_direct.list', 'w', encoding='utf-8')
 
 now_time = time.strftime("%Y-%m-%d %H:%M:%S")
 file_proxy.write('# top50 proxy list update time: ' + now_time + '\n')
