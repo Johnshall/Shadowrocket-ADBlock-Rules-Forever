@@ -153,7 +153,7 @@
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_top500_whitelist_ad.png)
 
 
-## 黑名单过滤 (仅备份)
+## 黑名单过滤
 
 现在很多浏览器都自带了广告过滤功能，而广告过滤的规则其实较为臃肿，如果你不需要全局地过滤 App 内置广告和视频广告，可以选择这个不带广告过滤的版本。
 
@@ -166,7 +166,7 @@
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_top500_banlist.png)
 
 
-## 白名单过滤 (仅备份)
+## 白名单过滤
 
 现在很多浏览器都自带了广告过滤功能，而广告过滤的规则其实较为臃肿，如果你不需要全局地过滤 App 内置广告和视频广告，可以选择这个不带广告过滤的版本。
 
@@ -246,3 +246,7 @@
 规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules/sr_backcn_ad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules/figure/sr_backcn_ad.png)
+
+### 鸣谢：
+感谢 [@h2y](https://github.com/h2y)及所有给予[Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)无私帮助的社区开发者们；  
+感谢 [@hfdem](https://github.com/hfdem)给予我的帮助、肯定与支持！
