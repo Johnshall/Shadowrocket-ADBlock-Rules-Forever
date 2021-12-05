@@ -7,10 +7,10 @@ import time
 # confs names in template/ and ../
 # except sr_head and sr_foot
 confs_names = [
-    'sr_top500_banlist_ad',
-    'sr_top500_banlist',
-    'sr_top500_whitelist_ad',
-    'sr_top500_whitelist',
+    'sr_top50_banlist_ad',
+    'sr_top50_banlist',
+    'sr_top50_whitelist_ad',
+    'sr_top50_whitelist',
     'sr_adb',
     'sr_direct_banad',
     'sr_proxy_banad',
@@ -55,8 +55,8 @@ values = {}
 
 values['build_time'] = time.strftime("%Y-%m-%d %H:%M:%S")
 
-values['top500_proxy']  = getRulesStringFromFile('resultant/top500_proxy.list', 'Proxy')
-values['top500_direct'] = getRulesStringFromFile('resultant/top500_direct.list', 'Direct')
+values['top50_proxy']  = getRulesStringFromFile('resultant/top50_proxy.list', 'Proxy')
+values['top50_direct'] = getRulesStringFromFile('resultant/top50_direct.list', 'Direct')
 
 values['ad'] = getRulesStringFromFile('resultant/ad.list', 'Reject')
 
