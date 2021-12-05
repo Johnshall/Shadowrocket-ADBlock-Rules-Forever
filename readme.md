@@ -32,6 +32,8 @@
 - 增加了 [Peter Lowe](https://pgl.yoyo.org/adservers/) 广告和隐私跟踪域名
 - 加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名
 - 将[Apple域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf)加入直连
+- 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，所以所有关于 top 500 的规则已不再更新，这里仅做备份使用
+- 我们根据世界排名 top 50 网站列表重新生成了新的规则，并加入[苹果及其CDN域名](https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf)
 
 
 ## 规则列表
@@ -122,7 +124,7 @@
 
 ----------------------------------------
 
-## 黑名单过滤 + 广告
+## 黑名单过滤 + 广告 (仅备份)
 
 黑名单中包含了境外网站中无法访问的那些，对不确定的网站则默认直连。
 
@@ -134,7 +136,7 @@
 
 ![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_top500_banlist_ad.png)
 
-## 白名单过滤 + 广告
+## 白名单过滤 + 广告 (仅备份)
 
 白名单中包含了境外网站中可以访问的那些，对不确定的网站则默认代理。
 
@@ -147,7 +149,7 @@
 ![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_top500_whitelist_ad.png)
 
 
-## 黑名单过滤
+## 黑名单过滤 (仅备份)
 
 现在很多浏览器都自带了广告过滤功能，而广告过滤的规则其实较为臃肿，如果你不需要全局地过滤 App 内置广告和视频广告，可以选择这个不带广告过滤的版本。
 
@@ -160,7 +162,7 @@
 ![二维码](https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules/master/figure/sr_top500_banlist.png)
 
 
-## 白名单过滤
+## 白名单过滤 (仅备份)
 
 现在很多浏览器都自带了广告过滤功能，而广告过滤的规则其实较为臃肿，如果你不需要全局地过滤 App 内置广告和视频广告，可以选择这个不带广告过滤的版本。
 
