@@ -25,8 +25,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.7
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: Development
-          BRANCH: Development
+          branch: Development
           FOLDER: .
           commit-message : 'Nightly build'
           
