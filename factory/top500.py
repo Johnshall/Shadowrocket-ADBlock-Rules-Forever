@@ -141,7 +141,9 @@ file_direct.write('# top500 direct list update time: ' + now_time + '\n')
 
 
 # 将苹果IP加入直连
-r = requests.get(url="https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf", headers=requests_header)
+# 由于本脚本应当运行在内部环境中，可能无法访问Github，故改用staticdn.net提供的CDN节点
+# r = requests.get(url="https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf", headers=requests_header)
+r = requests.get(url='https://raw.staticdn.net/felixonmars/dnsmasq-china-list/master/apple.china.conf', headers=requests_header)
 for url in r.text.split("\n")[:-1]:
     url = re.sub(r'(server=\/)', '', url)   # 清除前缀
     url = re.sub(r'(/114.114.114.114)', '', url)   # 清除后缀
