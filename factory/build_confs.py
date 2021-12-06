@@ -37,7 +37,7 @@ def getRulesStringFromFile(path, kind):
                 prefix = 'IP-CIDR'
                 if '/' not in content:
                     content += '/32'
-            elif '.' not in content:
+            elif '.' not in content and len(content) > 1:
                 prefix = 'DOMAIN-KEYWORD'
 
             ret += prefix + ',%s,%s\n' % (content, kind)
