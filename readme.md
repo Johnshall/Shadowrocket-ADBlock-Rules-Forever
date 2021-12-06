@@ -34,7 +34,6 @@
 - 加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名
 - 将[Apple及其CDN域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf)加入直连
 - 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，由于该名单随时间变化不大，故没有进行改动
-- 将[Apple域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf)加入直连
 - **所有发布的规则都会在每天 北京时间 8:00 更新发布**
 
 
