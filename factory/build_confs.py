@@ -2,7 +2,7 @@
 
 import re
 import time
-import os
+
 
 # confs names in template/ and ../
 # except sr_head and sr_foot
