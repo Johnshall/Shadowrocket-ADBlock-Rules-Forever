@@ -20,7 +20,7 @@ rules_url = [
     # 乘风 广告过滤规则
     'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt',
     # Peter Lowe 广告和隐私跟踪域名
-    'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus;showintro=0',
+    # 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus;showintro=0',
 ]
 
 rule = ''
