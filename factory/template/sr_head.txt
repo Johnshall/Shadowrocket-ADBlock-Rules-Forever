@@ -1,6 +1,6 @@
 # Best Shadowrocket Rules (https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever)
 # by Moshel and Johnshall
-# build time: {{build_time}}
+# build time: UTC {{build_time}}
 
 [General]
 bypass-system = true
