@@ -209,3 +209,6 @@ xdcs-collector.ximalaya.com
 adx.hupu.com
 kikibt8.com
 kikibt8.xyz
+
+#用户提交
+pglstatp-toutiao.com
