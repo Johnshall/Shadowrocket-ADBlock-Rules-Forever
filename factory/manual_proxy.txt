@@ -114,3 +114,8 @@ gs-loc.apple.com
 bag.itunes.apple.com
 apple.news
 news.iadsdk.apple.com
+
+#github
+github.com
+github.io
+raw.githubusercontent.com

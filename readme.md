@@ -22,7 +22,7 @@
 **本规则具有以下特点：**
 
 - 黑名单由最新版 [GFWList](https://github.com/gfwlist/gfwlist) 自动转换；加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名；增加了白名单针对全球 top500 站点的连通情况定期自动生成。
-- 自动转换最新版本的 `EasyList, Eaylist China, Peter Lowe 广告和隐私跟踪域名` 为 SR 规则，全面去除广告且去除重复。
+- 自动转换最新版本的 `EasyList, Eaylist China, Peter Lowe 广告和隐私跟踪域名， 乘风规则` 为 SR 规则，全面去除广告且去除重复。
 - 也包括自定义的广告过滤规则，针对 iOS 端的网页广告、App 广告和视频广告。
 - 提供多个规则文件让大家自由选择或者自由切换使用。
 - 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性。
