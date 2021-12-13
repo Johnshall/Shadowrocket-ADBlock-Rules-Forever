@@ -24,7 +24,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
-          BRANCH: Development
+          BRANCH: master
           FOLDER: .
           commit-message : 'Nightly build'
           

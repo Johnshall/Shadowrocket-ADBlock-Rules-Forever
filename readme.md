@@ -3,7 +3,6 @@
 ### 试更新公告
 
 由于原作者[h2y](https://github.com/h2y)已停止维护[Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。**所有规则都会在每天 北京时间 8:00 更新发布。**
-每日构建将会在 Development 分支下更新，这里给出的订阅地址指向 Development 下最新的规则。
 
 ### 写在前面 —— 请保护好自己
 
