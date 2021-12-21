@@ -3,7 +3,7 @@ name: CI
 on:
   schedule:
     # 每日8时开始
-    - cron:  '58 22 * * *'
+    - cron:  '0 23 * * *'
 
   # 可手动触发
   workflow_dispatch:
