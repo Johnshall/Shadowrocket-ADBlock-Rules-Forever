@@ -119,3 +119,6 @@ news.iadsdk.apple.com
 github.com
 github.io
 raw.githubusercontent.com
+
+# news
+vox.com
