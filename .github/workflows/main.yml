@@ -4,6 +4,10 @@ on:
   schedule:
     # 每日8时开始
     - cron:  '0 23 * * *'
+  
+  push:
+    branches:
+    - master
 
   # 可手动触发
   workflow_dispatch:
