@@ -15,7 +15,7 @@ with open("resultant/top500_manual.list", "r", encoding='utf-8') as f:
     for domain in f.readlines():
         if domain[0] == "#":
             continue
-        domains.append(domain)
+        domains.append(domain[:-1])
 
 # 判断直连或代理
 domains_proxy = []
