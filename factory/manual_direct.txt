@@ -105,3 +105,8 @@ www.apple.com.edgekey.net.globalredir.akadns.net
 www.apple.com.edgekey.net
 valid.apple.com
 www.apple.com
+
+# banks
+# Thanks @magnesia
+paypalobjects.com
+transferwise.com
