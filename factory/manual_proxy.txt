@@ -161,3 +161,6 @@ swdist.apple.com.akadns.net
 swscan-cdn.apple.com.akadns.net
 valid.origin-apple.com.akadns.net
 phobos.apple.com
+
+# linkedin
+linkedin.com
