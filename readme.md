@@ -76,7 +76,7 @@
 **[hfdem的博客](https://www.hfdem.net)**  
 一位永远鼓励着我前进并给予我帮助的大佬的博客。
 
-**[我的博客](https://blog.ncbadboy.ml)**
+**[我的博客](https://blog.metaphorme.net)**
 
 我是个自由的开发者，喜欢生命和阳光。
 
@@ -110,7 +110,7 @@
 
 ## 问题反馈
 
-任何问题欢迎在 [Issues](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/issues) 中反馈，如果没有账号可以去 [我的网站](https://blog.ncbadboy.ml) 中留言。
+任何问题欢迎在 [Issues](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/issues) 中反馈。
 
 你的反馈会让此规则变得更加完美。
 
