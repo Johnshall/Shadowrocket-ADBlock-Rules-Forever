@@ -8,9 +8,9 @@ on:
   push:
     branches:
     - master
-
-  # 可手动触发
-  workflow_dispatch:
+    paths-ignore: 
+      - 'readme.md'
+      - 'LICENSE'
   
 jobs:
   build:
