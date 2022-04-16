@@ -2,7 +2,7 @@
 
 ### 试更新公告
 
-由于原作者 [h2y](https://github.com/h2y) 已停止维护 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket 再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。**所有规则都会在每天 北京时间 8:00 更新发布。**
+由于原作者 [h2y](https://github.com/h2y) 已停止维护 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket 再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。**所有规则都会在每天北京时间 8:00 更新发布。**
 
 ### 写在前面 —— 请保护好自己
 
@@ -20,20 +20,15 @@
 
 **本规则具有以下特点：**
 
-- 黑名单由最新版 [GFWList](https://github.com/gfwlist/gfwlist) 自动转换；加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名；增加了白名单针对全球 top500 站点的连通情况定期自动生成。
-- 自动转换最新版本的 `EasyList`, `Eaylist China`, `Peter Lowe 广告和隐私跟踪域名`， `乘风规则` 为 SR 规则，全面去除广告且去除重复。
-- 包括自定义的广告过滤规则，针对 iOS 端的网页广告、App 广告和视频广告。
-- 提供多个规则文件供大家自由选择或者自由切换使用。
-- 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性。
-- 将 [Apple域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf) 加入直连
-
-
-**我做了如下改动：**
-- 增加了 [Peter Lowe](https://pgl.yoyo.org/adservers/) 广告和隐私跟踪域名
-- 加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名
-- 将 [Apple及其CDN域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf) 加入直连
-- 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，故原来的 top500 检测方法失效。我已根据旧的 top500 榜单重构了新的 top500 网站连接情况表。**同时，希望大家可以帮助 pull requests 一份最新的 top500 榜单: [格式](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/blob/master/factory/resultant/top500_manual.list)**  
-- **所有发布的规则都会在 每天北京时间 8:00 更新发布**
+- 黑名单由最新版 [GFWList](https://github.com/gfwlist/gfwlist) 自动转换；
+- 加入 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain) 检测到的屏蔽域名；
+- 自动转换最新版本的 `EasyList`, `Eaylist China`, `Peter Lowe 广告和隐私跟踪域名`，`乘风规则` 为 SR 规则，全面去除广告且去除重复；
+- 包括自定义的广告过滤规则，针对 iOS 端的网页广告、App 广告和视频广告；
+- 提供多个规则文件供大家自由选择或者自由切换使用；
+- 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性；
+- 将 [Apple及其CDN域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf) 进行优化；
+- 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，故原来的 top500 检测方法失效。我已根据旧的 top500 榜单重构了新的 top500 网站连接情况表。**同时，希望大家可以帮助 pull requests 一份最新的 top500 榜单: [格式](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/blob/master/factory/resultant/top500_manual.list)**
+- **所有发布的规则都会在每天北京时间 8:00 更新发布**
 
 
 ## 规则列表
@@ -69,14 +64,19 @@
 
 这是一个很棒的 IP 查询网站，支持同时查询你的境内境外 IP，以及谷歌 IP。
 
-**[hzy的博客](https://hzy.pw)**
+**[hzy的博客](https://hzy.pw/)**
 
 我是一名大学生，沉迷技术无法自拔。这是我的个人博客，会分享一些有趣的东西和自己的观点，欢迎来逛逛~
 
-**[hfdem的博客](https://www.hfdem.net)**  
+**[DuckSoft的博客](https://www.ducksoft.site/)**
+
+INTP | Jack of all trades | I use Arch BTW
+
+**[hfdem的博客](https://www.hfdem.net/)**
+
 一位永远鼓励着我前进并给予我帮助的大佬的博客。
 
-**[我的博客](https://blog.metaphorme.net)**
+**[我的博客](https://blog.metaphorme.net/)**
 
 我是个自由的开发者，喜欢生命和阳光。
 
@@ -107,6 +107,10 @@
 - **外区 Apple Podcasts 无法正常加载** (感谢 [@jesuiseric](https://t.me/jesuiseric))
 
 > 请将 `podcasts.apple.com`、`bookkeeper.itunes.apple.com`、`play.itunes.apple.com`、`xp.apple.com` 加入代理，详见 [#214](https://github.com/DivineEngine/Profiles/issues/214)
+
+- **无法正常跳转 Safari 对 google.cn 的请求**
+
+> 轻击配置 -> 轻击本地文件中正在使用的规则文件后的ℹ️ -> HTTPS 解密 -> 将右上角开关启动 -> 安装证书 -> 允许 -> 打开系统设置 -> 已下载描述文件 -> 安装 -> 输入密码 -> 安装 -> 通用 -> 关于本机 -> 证书信任设置 -> 对刚刚安装的根证书完全信任 即可正常跳转。
 
 ## 问题反馈
 
