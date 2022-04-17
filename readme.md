@@ -53,10 +53,10 @@
 
 ## 规则使用方法
 
-在 Safari 中直接打开规则链接或扫描二维码即可添加，无需进入 ShadowRocket 应用中 [配置] 页面。
+方法一：用 Safari 或 ShadowRocket 扫描二维码即可。
+方法二：在 ShadowRocket 应用中，进入 [配置] 页面，点击右上角加号，将规则文件地址粘贴到 url 处，点击“下载”即可。
 
 最好让 ShadowRocket 断开并重新连接一次，以确保新的规则文件生效。 
-
 
 ## 一些推荐的网站
 
@@ -142,7 +142,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 直连：正常的网站
 - 包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist_ad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_top500_banlist_ad.png)
 
@@ -154,7 +154,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 代理：默认代理其余的所有境外网站
 - 包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_whitelist_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_whitelist_ad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_top500_whitelist_ad.png)
 
@@ -167,7 +167,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 直连：正常的网站
 - 不包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_banlist.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_top500_banlist.png)
 
@@ -180,7 +180,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 代理：默认代理其余的所有境外网站
 - 不包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_whitelist.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_top500_whitelist.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_top500_whitelist.png)
 
@@ -189,7 +189,7 @@ INTP | Jack of all trades | I use Arch BTW
 
 国内外划分，对中国网站直连，外国网站代理。包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_cnip_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_cnip_ad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_cnip_ad.png)
 
@@ -198,7 +198,7 @@ INTP | Jack of all trades | I use Arch BTW
 
 国内外划分，对中国网站直连，外国网站代理。不包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_cnip.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_cnip.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_cnip.png)
 
@@ -210,7 +210,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 直连：所有请求
 - 包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_direct_banad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_direct_banad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_direct_banad.png)
 
@@ -223,7 +223,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 代理：其余所有请求
 - 包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_proxy_banad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_proxy_banad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_proxy_banad.png)
 
@@ -236,7 +236,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 代理：中国网站
 - 不包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_backcn.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_backcn.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_backcn.png)
 
@@ -249,7 +249,7 @@ INTP | Jack of all trades | I use Arch BTW
 - 代理：中国网站
 - 包含广告过滤
 
-规则地址：<shadowrocket://config/add/https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_backcn_ad.conf>
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_backcn_ad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_backcn_ad.png)
 
