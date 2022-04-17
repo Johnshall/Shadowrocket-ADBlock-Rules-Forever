@@ -6,4 +6,4 @@
 hostname = *.google.cn
 
 # By Moshel @ https://hzy.pw/
-# By Johnshall @ https://blog.ncbadboy.ml
+# By Johnshall @ https://blog.metaphorme.net/
