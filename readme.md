@@ -260,11 +260,18 @@ INTP | Jack of all trades | I use Arch BTW
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_backcn_ad.png)
 
-### 鸣谢：
+## 鸣谢：
 感谢 [@h2y](https://github.com/h2y) 及所有给予 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules) 无私帮助的社区开发者们；  
 感谢 [@hfdem](https://github.com/hfdem) 给予我的帮助、肯定与支持！  
 感谢 [JetBrains](https://www.jetbrains.com) 提供的一系列好用的 IDE 和对本项目的支持。
 
+### 本项目引用：  
+[gfwlist](https://github.com/gfwlist/gfwlist)  
+[Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain)   
+[乘风广告过滤规则](https://github.com/xinggsf/Adblock-Plus-Rule)  
+[EasyList China](https://adblockplus.org/)  
+[Peter Lowe 广告和隐私跟踪域名](https://pgl.yoyo.org/)  
+[Youtube 去广告脚本](https://github.com/Choler/Surge)  
 
 ## Stargazers over time
 
