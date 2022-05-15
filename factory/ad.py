@@ -14,13 +14,13 @@ import re
 
 rules_url = [
     # EasyList China
-    'https://easylist-downloads.adblockplus.org/easylistchina.txt',
+    #'https://easylist-downloads.adblockplus.org/easylistchina.txt',
     # EasyList + China
     'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt',
     # 乘风 广告过滤规则
     'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt',
     # Peter Lowe 广告和隐私跟踪域名
-    'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus;showintro=0',
+    #'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus;showintro=0',
 ]
 
 rule = ''
