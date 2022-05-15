@@ -25,10 +25,10 @@ jobs:
       - name: Run auto-build.sh
         run: ./factory/auto_build.sh
         
-      #- name: Deploy
-      #  uses: JamesIves/github-pages-deploy-action@4.1.7
-      #  with:
-      #    BRANCH: master
-      #    FOLDER: .
-      #    commit-message : 'Nightly build'
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          BRANCH: master
+          FOLDER: .
+          commit-message : 'Nightly build'
           
