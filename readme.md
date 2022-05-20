@@ -48,6 +48,7 @@
 [全局代理 + 去广告](#代理去广告) |  全部 | /
 [回国规则 + 去广告](#回国规则--广告) | 中国网站 | 国外网站 
 [回国规则](#回国规则) |   |  
+[仅去广告规则](#仅去广告规则) |   |  
 
 - 以上所有规则，局域网内请求均直连。
 - 可以下载多个规则切换使用。
@@ -259,6 +260,18 @@ INTP | Jack of all trades | I use Arch BTW
 规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_backcn_ad.conf>
 
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_backcn_ad.png)
+
+
+## 仅去广告规则
+
+仅包含去广告规则，不包含代理/直连规则。用于与其他规则联用。
+
+- 包含广告过滤，内网直连，DNS配置，URL复写等基础设置
+
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf>
+
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_ad_only.png)
+
 
 ## 鸣谢：
 感谢 [@h2y](https://github.com/h2y) 及所有给予 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules) 无私帮助的社区开发者们；  
