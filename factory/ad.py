@@ -50,6 +50,19 @@ for rule_url in rules_url:
 
     rule = rule + r.text + '\n'
 
+# except rules
+ignore = []
+ad_ignore = sys.stdout
+try:
+    if sys.version_info.major == 3:
+        ad_ignore = open('resultant/ad_ignore.list', 'r', encoding='utf-8')
+    else:
+        ad_ignore = open('resultant/ad_ignore.list', 'r')
+except:
+    pass
+for ig in ad_ignore.readlines():
+    if ig[0] != '#' and ig != '\n':
+        ignore.append(ig.strip())
 
 # parse rule
 rule = rule.split('\n')
@@ -89,6 +102,10 @@ for row in rule:
     # 不能含有的字符
     if re.search(r'[/^:*]', row):
         print('ignore: '+row0)
+        continue
+    
+    # 去除 ignore 中的内容
+    if row in ignore:
         continue
 
     # 只匹配域名或 IP
