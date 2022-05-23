@@ -10,19 +10,22 @@ import time
 import threading
 import csv
 
+now_time = time.strftime("%Y-%m-%d %H:%M:%S")
 url = 'https://moz.com/top-500/download/?table=top500Domains'
 r = requests.get(url) 
-with open("top500Domains.csv", "wb") as code:
-    code.write(r.content)
+with open("resultant/top500Domains.csv", "wb") as raw:
+    raw.write(r.content)
 
-with open('top500Domains.csv','r') as csvfile:
+with open('resultant/top500Domains.csv','r') as csvfile:
     reader = csv.reader(csvfile)
     with open("resultant/top500_manual.list", "w") as file_domain_in:
+        file_domain_in.write('# top500 proxy list update time: ' + now_time + '\n')
         for domain_i,rows in enumerate(reader):
             if domain_i != 1:
                 for domain_n in reader:
                     file_domain_in.write(domain_n[1] + '\n')
-        
+
+print('Get top500 list successfully...\n\n')
 
 # Read top500        
 domains = [] 
@@ -75,7 +78,7 @@ print('top500 Script Starting...\n\n')
 
 # Start Thread
 scaner_thread_num = 0
-for i in range(5):
+for i in range(10):
     DomainScaner().start()
     scaner_thread_num += 1
 
@@ -88,7 +91,6 @@ while scaner_thread_num:
 file_proxy = open('resultant/top500_proxy.list', 'w', encoding='utf-8')
 file_direct = open('resultant/top500_direct.list', 'w', encoding='utf-8')
 
-now_time = time.strftime("%Y-%m-%d %H:%M:%S")
 file_proxy.write('# top500 proxy list update time: ' + now_time + '\n')
 file_direct.write('# top500 direct list update time: ' + now_time + '\n')
 
