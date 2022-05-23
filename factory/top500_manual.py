@@ -5,7 +5,6 @@
 该脚本应当在内网环境中运行
 '''
 
-import pandas as pd
 import requests
 import time
 import threading
@@ -25,7 +24,7 @@ with open('top500Domains_new.csv','r') as csvfile:
                     file_domain_in.write(domain_n[1] + '\n')
         
 
-        
+# Read top500        
 domains = [] 
 with open("resultant/top500_manual.list", "r", encoding='utf-8') as f:
     for domain in f.readlines():
