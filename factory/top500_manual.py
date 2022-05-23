@@ -5,17 +5,34 @@
 该脚本应当在内网环境中运行
 '''
 
+import pandas as pd
 import requests
 import time
 import threading
+import csv
 
-# Read top500
+url = 'https://moz.com/top-500/download/?table=top500Domains'
+r = requests.get(url) 
+with open("top500Domains.csv", "wb") as code:
+    code.write(r.content)
+
+with open('top500Domains_new.csv','r') as csvfile:
+    reader = csv.reader(csvfile)
+    with open("resultant/top500_manual.list", "w") as file_domain_in:
+        for domain_i,rows in enumerate(reader):
+            if domain_i != 1:
+                for domain_n in reader:
+                    file_domain_in.write(domain_n[1] + '\n')
+        
+
+        
 domains = [] 
 with open("resultant/top500_manual.list", "r", encoding='utf-8') as f:
     for domain in f.readlines():
         if domain[0] == "#":
             continue
         domains.append(domain[:-1])
+
 
 domains_proxy = []
 domains_direct = []
