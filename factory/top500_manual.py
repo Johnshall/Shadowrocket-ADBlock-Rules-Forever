@@ -15,7 +15,7 @@ r = requests.get(url)
 with open("top500Domains.csv", "wb") as code:
     code.write(r.content)
 
-with open('top500Domains_new.csv','r') as csvfile:
+with open('top500Domains.csv','r') as csvfile:
     reader = csv.reader(csvfile)
     with open("resultant/top500_manual.list", "w") as file_domain_in:
         for domain_i,rows in enumerate(reader):
