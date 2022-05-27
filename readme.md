@@ -268,9 +268,9 @@ INTP | Jack of all trades | I use Arch BTW
 
 - 包含广告过滤，内网直连，DNS配置，URL复写等基础设置
 
-规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf>
+规则地址：<https://wydy.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf>
 
-![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_ad_only.png)
+![二维码](https://wydy.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_ad_only.png)
 
 
 ## 鸣谢：
