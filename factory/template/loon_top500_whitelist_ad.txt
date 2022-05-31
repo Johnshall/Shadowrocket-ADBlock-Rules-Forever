@@ -1,0 +1,27 @@
+#
+# 白名单中包含了境外网站中可以访问的那些，对不确定的网站则尽可能地代理。
+#
+# 直连：top500 网站中可直连的境外网站、中国网站
+# 代理：默认代理其余的所有境外网站
+# 包含广告过滤
+#
+
+
+{{ad}}
+{{manual_reject}}
+
+{{top500_direct}}
+
+DOMAIN-SUFFIX,cn,DIRECT
+GEOIP,CN,DIRECT
+
+{{manual_direct}}
+
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+
+{{manual_proxy}}
+
+FINAL,PROXY

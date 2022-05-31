@@ -1,0 +1,15 @@
+#
+# 国内外划分，对中国网站直连，外国网站代理。
+#
+# 包含广告过滤
+#
+
+DOMAIN-SUFFIX,ampproject.org,PROXY # Google AMP issue#237
+
+GEOIP,CN,DIRECT
+
+{{manual_reject}}
+
+{{ad}}
+
+FINAL,proxy

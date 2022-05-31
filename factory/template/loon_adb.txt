@@ -1,0 +1,27 @@
+#
+# 黑名单中包含了境外网站中无法访问的那些，对不确定的网站则尽可能地直连。
+#
+# 代理：top500 网站中不可直连的境外网站
+# 直连：默认直连境外其余网站、中国网站
+# 包含广告过滤
+#
+
+#
+# 这是旧的“黑名单规则”，存在的意义在于备份和向前兼容，一般无需选用。
+#
+
+{{manual_reject}}
+{{manual_proxy}}
+{{manual_direct}}
+
+{{ad}}
+{{top500_proxy}}
+
+DOMAIN-KEYWORD,google,Proxy
+
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+
+FINAL,direct

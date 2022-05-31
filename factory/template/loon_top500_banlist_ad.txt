@@ -1,0 +1,12 @@
+#
+# 黑名单中包含了 GFWList 中定义的无法访问的网站，剩下的网站直连。
+# 包含广告过滤
+#
+
+
+{{manual_reject}}
+
+{{ad}}
+{{gfwlist}}
+
+FINAL,direct
