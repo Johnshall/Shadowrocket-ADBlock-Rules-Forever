@@ -111,3 +111,5 @@ www.apple.com
 paypalobjects.com
 transferwise.com
 
+#Speedtest
+speedtest.net
