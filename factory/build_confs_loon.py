@@ -7,16 +7,9 @@ import time
 # confs names in template/ and ../
 # except sr_head and sr_foot
 confs_names = [
-    'loon_top500_banlist_ad',
-    'loon_top500_banlist',
-    'loon_top500_whitelist_ad',
-    'loon_top500_whitelist',
-    'loon_adb',
-    'loon_direct_banad',
-    'loon_proxy_banad',
-    'loon_cnip', 'loon_cnip_ad',
-    'loon_backcn', 'loon_backcn_ad',
-    'loon_ad_only'
+    'loon_direct',
+    'loon_proxy',
+    'loon_reject'
 ]
 
 

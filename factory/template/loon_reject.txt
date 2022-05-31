@@ -1,0 +1,8 @@
+#AD
+
+{{ad}}
+
+
+#Manual Reject
+
+{{manual_reject}}
