@@ -7,16 +7,16 @@ import time
 # confs names in template/ and ../
 # except sr_head and sr_foot
 confs_names = [
-    'loon_top500_banlist_ad',
-    'loon_top500_banlist',
-    'loon_top500_whitelist_ad',
-    'loon_top500_whitelist',
-    'loon_adb',
-    'loon_direct_banad',
-    'loon_proxy_banad',
-    'loon_cnip', 'loon_cnip_ad',
-    'loon_backcn', 'loon_backcn_ad',
-    'loon_ad_only'
+    'sr_top500_banlist_ad',
+    'sr_top500_banlist',
+    'sr_top500_whitelist_ad',
+    'sr_top500_whitelist',
+    'sr_adb',
+    'sr_direct_banad',
+    'sr_proxy_banad',
+    'sr_cnip', 'sr_cnip_ad',
+    'sr_backcn', 'sr_backcn_ad',
+    'sr_ad_only'
 ]
 
 
@@ -74,8 +74,8 @@ for conf_name in confs_names:
     file_template = open('template/'+conf_name+'.txt', 'r', encoding='utf-8')
     template = file_template.read()
 
-    template = str_head + template + str_foot
-
+    # template = str_head + template + str_foot
+    template =  template
     file_output = open('../'+conf_name+'.conf', 'w', encoding='utf-8')
 
     marks = re.findall(r'{{(.+)}}', template)
