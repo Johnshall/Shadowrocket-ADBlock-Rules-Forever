@@ -105,6 +105,7 @@ rules = filtrate_rules(rules)
 rules.extend(getURLs('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/domains.txt'))
 rules.extend('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/ip.txt')
 rules = list( set(rules) )
+rules.sort()
 
 open('resultant/gfw.list', 'w', encoding='utf-8') \
     .write('\n'.join(rules))
