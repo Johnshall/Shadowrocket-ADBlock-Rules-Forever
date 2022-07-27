@@ -111,3 +111,6 @@ www.apple.com
 paypalobjects.com
 transferwise.com
 
+# bilibili
+b23.tv
+bilibili.com
