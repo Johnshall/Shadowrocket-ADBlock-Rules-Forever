@@ -1,6 +1,6 @@
 
 [URL Rewrite]
-^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+^https?://(www.)?(g|google)\.cn https://www.google.com 302
 
 [Script]
 # Thanks Choler @ https://github.com/Choler/Surge/tree/master/Script
