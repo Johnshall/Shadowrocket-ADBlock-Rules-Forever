@@ -15,12 +15,10 @@ import re
 import base64
 
 
-rules_url = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
-
 unhandle_rules = []
 
-
-def get_rule(rules_url):
+# ruleType for raw or base64
+def get_rule(rules_url, ruleType='raw'):
     success = False
     try_times = 0
     r = None
@@ -36,9 +34,10 @@ def get_rule(rules_url):
     if not success:
         raise Exception('error in request %s\n\treturn code: %d' % (rules_url, r.status_code) )
 
-    rule = base64.b64decode(r.text) \
-            .decode("utf-8") \
-            .replace('\\n', '\n')
+    if ruleType == 'base64':
+        rule = base64.b64decode(r.text) \
+                .decode("utf-8") \
+                .replace('\\n', '\n')
 
     return rule
 
@@ -67,7 +66,7 @@ def clear_format(rule):
     return rules
 
 
-def filtrate_rules(rules):
+def filtrate_rules(rules, excludes=[]):
     ret = []
 
     for rule in rules:
@@ -82,6 +81,9 @@ def filtrate_rules(rules):
             unhandle_rules.append(rule0)
             continue
 
+        if rule in excludes:
+            continue
+
         ret.append(rule)
 
     ret = list( set(ret) )
@@ -89,21 +91,27 @@ def filtrate_rules(rules):
 
     return ret
 
-# 从 https://github.com/Johnshall/cn-blocked-domain 中获取GFWList的补充
 def getURLs(url):
     r = requests.get(url)
     return r.text.split("\n")[:-1]
 
 # main
 
-rule = get_rule(rules_url)
+rule = get_rule(rules_url='https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt', ruleType='base64')
+# 从 https://github.com/Johnshall/cn-blocked-domain 中获取GFWList的补充
+rules.extend(getURLs('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/domains.txt'))
 
 rules = clear_format(rule)
 
-rules = filtrate_rules(rules)
+excludes = []
+with open('manual_gfwlist_excludes.txt', 'r', encoding='utf-8') as f:
+    for line in f.readlines():
+        if line[0] == "#" or line == "\n":
+            continue
+        excludes.append(line.strip())
 
-rules.extend(getURLs('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/domains.txt'))
-rules.extend('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/ip.txt')
+rules = filtrate_rules(rules, excludes)
+
 rules = list( set(rules) )
 
 open('resultant/gfw.list', 'w', encoding='utf-8') \

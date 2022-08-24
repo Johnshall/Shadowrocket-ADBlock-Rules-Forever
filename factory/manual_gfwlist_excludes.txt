@@ -1,0 +1,2 @@
+# GFWList 会误判一些需要直连的网站，而修复上游较困难，所以这里的域名会从 gfwlist 中去除
+apple.com
