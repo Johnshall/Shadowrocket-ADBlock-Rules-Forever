@@ -24,6 +24,10 @@
 
 列表，手动编写。记录需要屏蔽的域名或 IP。
 
+**manual_gfwlist_excludes.txt**
+
+列表，手动编写。记录 gfwlist 误杀的域名或 IP。
+
 **manual_gfwlist.txt**
 
 GFWList 不能无损转换为 SR 规则，所以这里是对 GFWList 的补充。
