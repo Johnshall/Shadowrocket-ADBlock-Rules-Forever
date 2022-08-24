@@ -38,6 +38,8 @@ def get_rule(rules_url, ruleType='raw'):
         rule = base64.b64decode(r.text) \
                 .decode("utf-8") \
                 .replace('\\n', '\n')
+    else:
+        rule = r.text
 
     return rule
 
@@ -99,7 +101,7 @@ def getURLs(url):
 
 rule = get_rule(rules_url='https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt', ruleType='base64')
 # 从 https://github.com/Johnshall/cn-blocked-domain 中获取GFWList的补充
-rules.extend(getURLs('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/domains.txt'))
+rule += get_rule('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/domains.txt')
 
 rules = clear_format(rule)
 
