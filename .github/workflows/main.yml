@@ -4,6 +4,7 @@ on:
   schedule:
     # 北京时间每日8时更新
     - cron:  '0 23 * * *'
+  workflow_dispatch:
   
   push:
     branches:
