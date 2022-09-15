@@ -4,7 +4,7 @@
 
 [Script]
 # Thanks Choler @ https://github.com/Choler/Surge/tree/master/Script
-YouTube去广告 = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path=https://choler.github.io/Surge/Script/YouTube.js,script-update-interval=0,enable = false
+YouTube去广告 = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path=https://choler.github.io/Surge/Script/YouTube.js,script-update-interval=0,enable = true
 
 [MITM]
 hostname = *.google.cn,*.googlevideo.com
