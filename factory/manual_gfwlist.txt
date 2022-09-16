@@ -43,3 +43,7 @@ phobos
 
 # hacker news web site
 news.ycombinator.com
+
+#TrustWallet
+trustwallet.com
+walletconnect.org
