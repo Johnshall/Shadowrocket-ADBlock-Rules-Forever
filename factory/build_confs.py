@@ -73,10 +73,9 @@ values['gfwlist'] = getRulesStringFromFile('resultant/gfw.list', 'Proxy') \
 for conf_name in confs_names:
     file_template = open('template/'+conf_name+'.txt', 'r', encoding='utf-8')
     template = file_template.read()
-
-    template = template + str_foot
+  
     if conf_name != 'sr_ad_only':
-        template = template
+        template = str_head + template + str_foot
 
     file_output = open('../'+conf_name+'.conf', 'w', encoding='utf-8')
 
