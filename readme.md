@@ -266,7 +266,7 @@ INTP | Jack of all trades | I use Arch BTW
 
 仅包含去广告规则，不包含代理/直连规则。用于与其他规则联用。
 
-- 包含广告过滤，内网直连，DNS配置，URL复写等基础设置
+- 仅包含去广告规则，不包含代理/直连规则。无任何其他配置。
 
 规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf>
 
