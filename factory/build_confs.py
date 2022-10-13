@@ -76,7 +76,7 @@ for conf_name in confs_names:
 
     template = template + str_foot
     if conf_name != 'sr_ad_only':
-        template = str_head + template
+        template = template
 
     file_output = open('../'+conf_name+'.conf', 'w', encoding='utf-8')
 
