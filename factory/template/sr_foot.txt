@@ -2,9 +2,6 @@
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
 
-[Script]
-# Thanks Choler @ https://github.com/Choler/Surge/tree/master/Script
-YouTube去广告 = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path=https://choler.github.io/Surge/Script/YouTube.js,script-update-interval=0,enable = false
 
 [MITM]
 hostname = *.google.cn,*.googlevideo.com

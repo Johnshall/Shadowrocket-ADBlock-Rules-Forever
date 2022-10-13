@@ -283,8 +283,7 @@ INTP | Jack of all trades | I use Arch BTW
 [Greatfire Analyzer](https://github.com/Loyalsoldier/cn-blocked-domain)   
 [乘风广告过滤规则](https://github.com/xinggsf/Adblock-Plus-Rule)  
 [EasyList China](https://adblockplus.org/)  
-[Peter Lowe 广告和隐私跟踪域名](https://pgl.yoyo.org/)  
-[Youtube 去广告脚本](https://github.com/Choler/Surge)  
+[Peter Lowe 广告和隐私跟踪域名](https://pgl.yoyo.org/)   
 
 ## Stargazers over time
 
