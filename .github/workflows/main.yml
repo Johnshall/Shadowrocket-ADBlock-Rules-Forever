@@ -1,4 +1,4 @@
-name: CI
+name: Build Shadowrocket Rules
 
 on:
   schedule:
@@ -7,10 +7,12 @@ on:
   
   push:
     branches:
-    - master
+      - master
     paths-ignore: 
-      - 'readme.md'
+      - '**.md'
       - 'LICENSE'
+
+  workflow_dispatch:
   
 jobs:
   build:
