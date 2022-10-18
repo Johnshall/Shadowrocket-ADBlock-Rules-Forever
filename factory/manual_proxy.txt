@@ -6,6 +6,8 @@ youtu.be
 
 netflix.com
 
+tedcdn.com
+
 #161 可能以后会和GFWList重复
 9gag.com
 
