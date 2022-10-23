@@ -80,13 +80,9 @@
 
 INTP | Jack of all trades | I use Arch BTW
 
-**[hfdem的博客](https://www.hfdem.net/)**
+**[Blog](https://blog.metaphorme.net/)**
 
-一位永远鼓励着我前进并给予我帮助的大佬的博客。
-
-**[我的博客](https://blog.metaphorme.net/)**
-
-我是个自由的开发者，喜欢生命和阳光。
+一个喜欢生命和阳光的孩子。
 
 
 ## 常见问题
