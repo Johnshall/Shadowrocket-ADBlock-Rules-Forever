@@ -28,7 +28,7 @@
 - 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性；
 - 将 [Apple及其CDN域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf) 进行优化；
 - 方便的快捷指令与自动化联动，每天自动更新规则；
-- 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，故原来的 top500 检测方法失效。我已根据旧的 top500 榜单重构了新的 top500 网站连接情况表。**同时，希望大家可以帮助 pull requests 一份最新的 top500 榜单: [格式](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/blob/master/factory/resultant/top500_manual.list)**
+- 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，故原来的 top500 检测方法失效。我已根据旧的 top500 榜单重构了新的 top500 网站连接情况表。**同时，希望大家可以帮助 pull requests 一份最新的 top500 榜单: [格式](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/blob/build/factory/resultant/top500_manual.list)**
 - **所有发布的规则都会在每天北京时间 8:00 更新发布**
 
 
@@ -124,7 +124,11 @@ INTP | Jack of all trades | I use Arch BTW
 
 **如何贡献代码？**
 
-通常的情况下，对 [factory 目录](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
+通常的情况下，对 [factory 目录](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/tree/build/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。**Pull requests 请发送至 build 分支。**
+
+**如何拥有自己的定制化规则？**
+
+点击右上角 Fork，取消勾选`Copy the release branch only`，在自己的仓库开启 Actions 功能即可。
 
 
 ## 捐助
