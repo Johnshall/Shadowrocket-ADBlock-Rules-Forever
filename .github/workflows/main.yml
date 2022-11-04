@@ -7,7 +7,14 @@ on:
   
   push:
     branches:
-      - master
+      - build
+    paths-ignore: 
+      - '**.md'
+      - 'LICENSE'
+  
+  pull_request_target:
+    branches:
+      - build
     paths-ignore: 
       - '**.md'
       - 'LICENSE'
@@ -18,8 +25,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Install requirements
         run: pip3 install -r requirements.txt
@@ -28,9 +34,9 @@ jobs:
         run: ./factory/auto_build.sh
         
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          BRANCH: master
+          BRANCH: build
           FOLDER: .
           commit-message : 'Nightly build'
           
