@@ -1,3 +1,6 @@
+[Host]
+127871.alidns.com = 2400:3200::1
+dns.alidns.com = 2400:3200:baba::1
 
 [URL Rewrite]
 ^https?://(www.)?(g|google)\.cn https://www.google.com 302
