@@ -4,6 +4,7 @@
 #
 
 
+{{manual_proxy}}
 {{gfwlist}}
 
 FINAL,direct
