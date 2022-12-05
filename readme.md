@@ -28,6 +28,7 @@
 - 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性；
 - 将 [Apple及其CDN域名](https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf) 进行优化；
 - 方便的快捷指令与自动化联动，每天自动更新规则；
+- 增加使用代理组的懒人配置；
 - 由于世界排名 top 500 网站列表已无法通过无账户/免费方式取得，故原来的 top500 检测方法失效。我已根据旧的 top500 榜单重构了新的 top500 网站连接情况表。**同时，希望大家可以帮助 pull requests 一份最新的 top500 榜单: [格式](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/blob/build/factory/resultant/top500_manual.list)**
 - **所有发布的规则都会在每天北京时间 8:00 更新发布**
 
@@ -49,6 +50,8 @@
 [回国规则 + 去广告](#回国规则--广告) | 中国网站 | 国外网站 
 [回国规则](#回国规则) |   |  
 [仅去广告规则](#仅去广告规则) |   |  
+[懒人配置](#懒人配置) | 类似白名单 | 类似白名单  
+[懒人配置（含策略组）](#懒人配置（含策略组）) | 自定义，默认类似白名单 | 自定义，默认类似白名单  
 
 - 以上所有规则，局域网内请求均直连。
 - 可以下载多个规则切换使用。
@@ -273,6 +276,34 @@ INTP | Jack of all trades | I use Arch BTW
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/sr_ad_only.png)
 
 
+----------------------------------------
+
+以下规则基于 [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) 生成： 
+
+## 懒人配置
+
+类似白名单规则，不折腾，开箱即用。
+
+- 直连：中国网站
+- 代理：国外网站
+- 包含广告过滤
+
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/lazy.conf>
+
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/lazy.png)
+
+
+## 懒人配置（含策略组）
+
+默认类似白名单规则，下载规则后可在 i -> 代理分组 中自行配置。
+
+- 包含广告过滤
+
+规则地址：<https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/lazy_group.conf>
+
+![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/lazy_group.png)
+
+
 ## 鸣谢：
 感谢 [@h2y](https://github.com/h2y) 及所有给予 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules) 无私帮助的社区开发者们；  
 感谢 [@hfdem](https://github.com/hfdem) 给予我的帮助、肯定与支持！  
@@ -284,6 +315,7 @@ INTP | Jack of all trades | I use Arch BTW
 [乘风广告过滤规则](https://github.com/xinggsf/Adblock-Plus-Rule)  
 [EasyList China](https://adblockplus.org/)  
 [Peter Lowe 广告和隐私跟踪域名](https://pgl.yoyo.org/)   
+[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)  
 
 ## Stargazers over time
 
