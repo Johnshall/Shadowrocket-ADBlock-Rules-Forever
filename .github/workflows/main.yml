@@ -11,13 +11,6 @@ on:
     paths-ignore: 
       - '**.md'
       - 'LICENSE'
-  
-  pull_request_target:
-    branches:
-      - build
-    paths-ignore: 
-      - '**.md'
-      - 'LICENSE'
 
   workflow_dispatch:
   
