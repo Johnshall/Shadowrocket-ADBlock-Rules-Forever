@@ -83,7 +83,7 @@
 
 INTP | Jack of all trades | I use Arch BTW
 
-**[Blog](https://blog.metaphorme.net/)**
+**[Blog](https://diazepam.cc/)**
 
 一个喜欢生命和阳光的孩子。
 
@@ -309,9 +309,11 @@ INTP | Jack of all trades | I use Arch BTW
 
 
 ## 鸣谢：
+
 感谢 [@h2y](https://github.com/h2y) 及所有给予 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules) 无私帮助的社区开发者们；  
 感谢 [@hfdem](https://github.com/hfdem) 给予我的帮助、肯定与支持！  
-感谢 [JetBrains](https://www.jetbrains.com/?from=Shadowrocket-ADBlock-Rules-Forever) 提供的一系列好用的 IDE 和对本项目的支持。
+感谢 [JetBrains](https://www.jetbrains.com/?from=Shadowrocket-ADBlock-Rules-Forever) 提供的一系列好用的 IDE 和对本项目的支持。  
+![JetBrains Logo (Main) logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)
 
 ### 本项目引用：  
 [gfwlist](https://github.com/gfwlist/gfwlist)  
