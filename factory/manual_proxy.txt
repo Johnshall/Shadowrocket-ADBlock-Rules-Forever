@@ -1,71 +1,48 @@
 # 手工定义的 Proxy 列表
 
-theinitium.com
-
-youtu.be
-
-netflix.com
-
+#TED
 tedcdn.com
 
-#161 可能以后会和GFWList重复
-9gag.com
 
 #Telegram
-67.198.55.0/24
+t.me
+tdesktop.com
+telegra.ph
+telegram.me
+telegram.org
+telesco.pe
+91.108.56.0/22
 91.108.4.0/22
 91.108.8.0/22
-91.108.12.0/22
 91.108.16.0/22
-91.108.56.0/22
-109.239.140.0/24
+91.108.12.0/22
 149.154.160.0/20
-149.154.164.0/22
-149.154.168.0/22
-149.154.172.0/22
+91.105.192.0/23
+91.108.20.0/22
+185.76.151.0/24
+2001:b28:f23d::/48
+2001:b28:f23f::/48
+2001:67c:4e8::/48
+2001:b28:f23c::/48
+2a0a:f280::/32
 
-#instagram
-cdninstagram.com
 
 #disqus
 disquscdn.com
 
-gist.github.com
-
-# 首页直连，但子域名需翻墙
-onedrive.live.com
-
-#20 开车
-t66y.com
-91porn.com
-
-#132
-feedly.com
 
 #50 whatsapp
-whatsapp.com
-whatsapp.net
 18.194.0.0/15
 34.224.0.0/12
 
 #54 台湾香港澳门 常用网站
-ptt.cc
-mingpaocanada.com
-mingpao.com
-appledaily.com
 appledaily.tw
-nextmag.com.tw
-thestandnews.com
 
-#60 GMail
-# 手机 smtp 和 imap 需要用到
-gmail.com
 
 #72 #112 Google Voice
 74.125.0.0/16
 
 #85（可能冗余）
-yt3.ggpht.com
 www-google-analytics.l.google.com
 ssl-google-analytics.l.google.com
 partnerad.l.google.com
@@ -79,9 +56,6 @@ afd.l.google.com
 #175 华尔街邮报
 dowjones.com
 
-#159
-thetvdb.com
-
 #180 OneDrive（可能冗余）
 bcbits.com
 ogma.iad.appboy.com
@@ -91,15 +65,11 @@ centralus1.mediap.svc.ms
 dm.files.1drv.com
 mobile.pipe.aria.microsoft.com
 gate.hockeyapp.net
-skyapi.live.net
 api.onedrive.com
 vortex.data.microsoft.com
 
 #183
 mendeley.com
-
-#192 播客收听应用程序 overcast
-overcast.fm
 
 #205 APPLE NEWS
 news-events.apple.com
@@ -118,8 +88,6 @@ apple.news
 news.iadsdk.apple.com
 
 #github
-github.com
-github.io
 raw.githubusercontent.com
 
 # news
@@ -148,7 +116,6 @@ init-s01st-lb.push-apple.com.akadns.net
 gsp85-cn-ssl.ls.apple.com
 itunes-apple.com.akadns.net
 gspe21.ls.apple.com
-gs-loc.apple.com
 mesu-china.apple.com.akadns.net
 mesu-cdn.apple.com.akadns.net
 ocsp-lb.apple.com.akadns.net
@@ -163,9 +130,6 @@ swdist.apple.com.akadns.net
 swscan-cdn.apple.com.akadns.net
 valid.origin-apple.com.akadns.net
 phobos.apple.com
-
-# linkedin
-linkedin.com
 
 # DisneyPlus
 disney.asia
@@ -438,11 +402,17 @@ wholekidsfoundation.org
 wholeplanetfoundation.org
 yamaxun.com
 
-# OpenAI
-openai.com
-
 # Paramount
 paramountplus.com
 
 # New Bing
 bing.com
+
+# DNS Leak
+dnsleaktest.com
+ipleak.net
+browserleaks.com
+browserleaks.org
+vpnunlimited.com
+whrq.net
+
