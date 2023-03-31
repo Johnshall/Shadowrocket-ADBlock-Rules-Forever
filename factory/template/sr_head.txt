@@ -10,6 +10,7 @@ skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, e.cr
 bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
 dns-server = https://doh.pub/dns-query, https://dns.alidns.com/dns-query
 [Rule]
+DOMAIN-SUFFIX,x2download.app,PROXY
 DOMAIN-SUFFIX,configure.rayjump.com,REJECT
 DOMAIN-SUFFIX,analytics-ios.rayjump.com,REJECT
 DOMAIN-SUFFIX,cdn-adn-https-new.rayjump.com,REJECT
@@ -25,8 +26,6 @@ DOMAIN-SUFFIX,tkcn-ccn.rayjump.com,REJECT
 DOMAIN-SUFFIX,adx-tk.rayjump.com,REJECT
 DOMAIN-SUFFIX,sg01.rayjump.com,REJECT
 DOMAIN-SUFFIX,mores.toponad.com,DIRECT
-DOMAIN-SUFFIX,authenticator.touchremix.com,REJECT
-DOMAIN-SUFFIX,secondnumber.touchremix.com,PROXY
 DOMAIN-SUFFIX,new-kv.adesk.com,REJECT
 DOMAIN-SUFFIX,new-selfad.adesk.com,REJECT
 DOMAIN-SUFFIX,btrace.qq.com,REJECT
