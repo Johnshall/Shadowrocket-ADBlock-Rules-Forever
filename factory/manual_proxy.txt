@@ -416,3 +416,5 @@ browserleaks.org
 vpnunlimited.com
 whrq.net
 
+# Forefront
+forefront.ai
