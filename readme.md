@@ -280,7 +280,7 @@ INTP | Jack of all trades | I use Arch BTW
 
 以下规则基于 [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) 生成： 
 
-## 懒人配置
+## 懒人配置（by [@wlxuf](https://github.com/wlxuf)）
 
 不折腾，开箱即用。
 
@@ -293,7 +293,7 @@ INTP | Jack of all trades | I use Arch BTW
 ![二维码](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/figure/lazy.png)
 
 
-## 懒人配置-含策略组
+## 懒人配置-含策略组（by [@wlxuf](https://github.com/wlxuf)）
 
 不折腾，开箱即用。下载规则后可在 i -> 代理分组 中自行配置。
 
