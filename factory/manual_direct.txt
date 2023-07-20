@@ -114,3 +114,10 @@ transferwise.com
 # bilibili
 b23.tv
 bilibili.com
+
+# Wikipedia Mirror
+wikimirror.net
+wikimirror.org
+
+# Bing
+cn.bing.com

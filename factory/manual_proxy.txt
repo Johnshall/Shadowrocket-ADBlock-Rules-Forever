@@ -418,3 +418,18 @@ whrq.net
 
 # Forefront
 forefront.ai
+
+# Mozilla
+mozilla.org
+
+# Txt.fyi
+txt.fyi
+
+# Adobe
+adobe.com
+
+# AOL
+aol.com
+
+# Yahoo
+yahoo.com

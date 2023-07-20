@@ -20,4 +20,6 @@ IP-CIDR,127.0.0.0/8,DIRECT
 
 {{manual_proxy}}
 
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AppleNews/AppleNews.list,PROXY
+
 FINAL,PROXY
