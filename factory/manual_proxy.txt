@@ -433,3 +433,6 @@ aol.com
 
 # Yahoo
 yahoo.com
+
+# Linkedin
+linkedin.cn
