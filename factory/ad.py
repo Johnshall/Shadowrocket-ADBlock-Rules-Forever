@@ -98,7 +98,7 @@ for row in rule:
     # 清除后缀
     row = row.rstrip('/*')
     if row[-1] == '^':
-        row = '.'+row
+        # row = '.'+row
         row = row.rstrip('^')
     row = re.sub(r':\d{2,5}$', '', row)  # 清除端口
 
