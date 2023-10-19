@@ -273,3 +273,5 @@ kikibt8.xyz
 
 #用户提交
 pglstatp-toutiao.com
+#知乎广告
+pic2.zhimg.com
