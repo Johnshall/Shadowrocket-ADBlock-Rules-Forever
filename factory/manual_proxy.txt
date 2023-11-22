@@ -436,3 +436,6 @@ yahoo.com
 
 # Linkedin
 linkedin.cn
+
+# 微软新推出的copilot功能
+copilot.microsoft.com
