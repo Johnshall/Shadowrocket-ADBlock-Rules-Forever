@@ -121,3 +121,6 @@ wikimirror.org
 
 # Bing
 cn.bing.com
+
+# 凉屋游戏
+chillyroom.com
