@@ -437,5 +437,8 @@ yahoo.com
 # Linkedin
 linkedin.cn
 
-# 微软新推出的copilot功能
+# Copilot
 copilot.microsoft.com
+
+# hoyolab
+hoyolab.com
