@@ -442,3 +442,6 @@ copilot.microsoft.com
 
 # hoyolab
 hoyolab.com
+
+# 防止 bing 地区检测
+location.microsoft.com
