@@ -155,6 +155,7 @@ wqmobile.com
 youmi.net
 zhiziyun.com
 segment.com
+googlesyndication.com
 
 #新浪（可能有多余项）
 ad.sina.com.cn
