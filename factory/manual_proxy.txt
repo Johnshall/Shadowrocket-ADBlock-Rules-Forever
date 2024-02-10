@@ -448,3 +448,6 @@ location.microsoft.com
 
 # devv
 devv.ai
+
+# 绕过蔚蓝档案日服的中国IP检测
+ba-jp-sdk.bluearchive.jp
