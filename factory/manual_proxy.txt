@@ -443,7 +443,6 @@ copilot.microsoft.com
 # hoyolab
 hoyolab.com
 
-# 防止 bing 地区检测
 location.microsoft.com
 
 # devv
@@ -451,3 +450,7 @@ devv.ai
 
 # 绕过蔚蓝档案日服的中国IP检测
 ba-jp-sdk.bluearchive.jp
+
+# 对Minecraft java版官方下载源进行代理（加快速度）
+resources.download.minecraft.net
+piston-data.mojang.com
