@@ -1,20 +1,20 @@
-# ## 最完善的 iOS Shadowrocket规则
+# 最完善的 iOS Shadowrocket规则
 
 ### 试更新公告
-由于作者 [Johnshall](https://github.com/Johnshall/) 事业繁忙，没有合并PR，我将对 [Shadowrocket-ADBlock-Rules-Forever](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 进行试更新。
-<details>
+由于作者 [Johnshall](https://github.com/Johnshall/) 事业繁忙，没有合并PR，我将对 [Shadowrocket-ADBlock-Rules-Forever](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 进行试更新，**所有规则都会在每天北京时间 8:00 更新发布。**
 
-~~由于原作者 [h2y](https://github.com/h2y) 已停止维护 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket 再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。**所有规则都会在每天北京时间 8:00 更新发布。~~**
-</details>
+> 由于原作者 [h2y](https://github.com/h2y) 已停止维护 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)，Shadowrocket 再无划分如此细致精美的规则。因此我决定用自己有限的能力和技术对该项目以个人的理解进行更新与维护。**所有规则都会在每天北京时间 8:00 更新发布。**
 
 ### 请保护好自己
 <details> 
 
 谷歌中英文的搜索体验都优于百度，而刷美剧、ins 追星、去推特看看特朗普也都挺有意思。但是，随着看到的人和事越多，我越发想要在这里说一些话，告诫路过的各位：
 
-**请务必保护好自己** 我们自认为打破了信息的壁垒，其实打破的是保护我们的屏障。因为外网真的存在很多误导性言论，来自各个利益集团对中国网民疯狂洗脑，他们往往还喜欢以平等自由等旗号自称，但仔细想想真的是这样吗？我只知道美国是最善于运用舆论的国家，会结合大数据潜移默化地改变你的观念。如果大家在上网过程中不经意看到了某些观点，务必保留自己独立思考的能力，如果你是一个容易被带偏的人，则建议回到屏障之中。
+**请务必保护好自己！**
 
-本规则只提供给大家用于更便捷地学习和工作。如果你是对上述观点持反对意见的极端政治人士，或者已被洗脑，请立即离开，本项目不对你开放。
+我们自认为打破了信息的壁垒，其实打破的是保护我们的屏障。因为外网真的存在很多误导性言论，来自各个利益集团对中国网民疯狂洗脑，他们往往还喜欢以平等自由等旗号自称，但仔细想想真的是这样吗？我只知道美国是最善于运用舆论的国家，会结合大数据潜移默化地改变你的观念。如果大家在上网过程中不经意看到了某些观点，务必保留自己独立思考的能力，如果你是一个容易被带偏的人，则建议回到屏障之中。
+
+本规则只提供给大家用于更便捷地学习和工作。如果你是对上述观点持反对意见的极端政治人士，或者已被洗脑，请立即离开，本项目不欢迎你。
 </details>
 
 ------------------------------------------------------
@@ -170,7 +170,8 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 直连：正常的网站
 - 不包含广告过滤
 
-```https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_top500_banlist.conf>
+```
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_top500_banlist.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_top500_banlist.png)
 
@@ -184,7 +185,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 不包含广告过滤
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_top500_whitelist.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_top500_whitelist.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_top500_whitelist.png)
 
@@ -194,7 +195,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 国内外划分，对中国网站直连，外国网站代理。包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_cnip_ad.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_cnip_ad.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_cnip_ad.png)
 
@@ -204,7 +205,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 国内外划分，对中国网站直连，外国网站代理。不包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_cnip.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_cnip.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_cnip.png)
 
@@ -217,7 +218,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 包含广告过滤
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_direct_banad.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_direct_banad.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_direct_banad.png)
 
@@ -231,7 +232,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 包含广告过滤
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_proxy_banad.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_proxy_banad.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_proxy_banad.png)
 
@@ -245,7 +246,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 不包含广告过滤
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_backcn.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_backcn.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_backcn.png)
 
@@ -259,7 +260,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 包含广告过滤
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_backcn_ad.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_backcn_ad.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_backcn_ad.png)
 
@@ -271,7 +272,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 仅包含去广告规则，不包含代理/直连规则。无任何其他配置。
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_ad_only.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_ad_only.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/sr_ad_only.png)
 
@@ -289,7 +290,7 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/sr_
 - 国内外常用app单独分流
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/lazy.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/lazy.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/lazy.png)
 
@@ -305,13 +306,13 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/laz
 - 通过「代理分组」灵活调整流媒体分流策略
 
 ```
-https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/lazy_group.conf>
+https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/lazy_group.conf
 ```
 ![二维码](https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/figure/lazy_group.png)
 
 
 ## 鸣谢：
-
+感谢 [Johnshall](https://github.com/Johnshall/) 的 [Shadowrocket-ADBlock-Rules-Forever](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever)！    
 感谢 [@h2y](https://github.com/h2y) 及所有给予 [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules) 无私帮助的社区开发者们；  
 感谢 [@hfdem](https://github.com/hfdem) 给予我的帮助、肯定与支持！  
 感谢 [JetBrains](https://www.jetbrains.com/?from=Shadowrocket-ADBlock-Rules-Forever) 提供的一系列好用的 IDE 和对本项目的支持。  
@@ -329,3 +330,8 @@ https://happyrespawnanchor.github.io/Shadowrocket-ADBlock-Rules-Forever-Plus/laz
 
 [![Stargazers over time](https://starchart.cc/Johnshall/Shadowrocket-ADBlock-Rules-Forever.svg)](https://starchart.cc/Johnshall/Shadowrocket-ADBlock-Rules-Forever)
 
+<details>
+
+[![Stargazers over time](https://starchart.cc/HappyRespawnanchor/Shadowrocket-ADBlock-Rules-Forever-Plus.svg)](https://starchart.cc/HappyRespawnanchor/Shadowrocket-ADBlock-Rules-Forever-Plus)
+
+</details>
