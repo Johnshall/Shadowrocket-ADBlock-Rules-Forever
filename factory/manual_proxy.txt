@@ -461,3 +461,6 @@ github.dev
 
 # 修复Minecraft Java版 Pojavlaucher iOS版正版账号没法加载3d头颅头像的问题
 mc-heads.net
+# 越狱下载源加速
+apt.thebigboss.org
+repo.chariz.com
