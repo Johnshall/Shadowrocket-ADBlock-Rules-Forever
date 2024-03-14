@@ -448,3 +448,20 @@ location.microsoft.com
 
 # devv
 devv.ai
+
+# 绕过蔚蓝档案日服的中国IP检测
+ba-jp-sdk.bluearchive.jp
+
+# 对 Minecraft java 版官方下载源进行代理（加快速度）
+resources.download.minecraft.net
+piston-data.mojang.com
+
+# GitHub在线编辑器
+github.dev
+
+# 修复Minecraft Java版 Pojavlaucher iOS 版正版账号没法加载3d头颅头像的问题
+mc-heads.net
+
+# 越狱下载源加速
+apt.thebigboss.org
+repo.chariz.com
