@@ -1,0 +1,71 @@
+name: Release Shadowrocket Rules
+
+on:
+  schedule:
+    # 每日8时开始
+    - cron:  '0 23 * * *'
+  
+  push:
+    branches:
+      - build
+    paths-ignore: 
+      - '**.md'
+      - 'LICENSE'
+      
+  pull_request_target:
+    branches:
+      - build
+    paths-ignore: 
+      - '**.md'
+      - 'LICENSE'
+
+  workflow_dispatch:
+  
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: build
+          path: build
+
+      - uses: actions/checkout@v3
+        with:
+          ref: release
+          path: release
+
+      - name: Install requirements
+        run: pip3 install -r build/requirements.txt
+
+      - name: Build Rules
+        run: |
+          cd build || exit 1
+          ./factory/auto_build.sh
+      
+      - name: Move files
+        run: |
+          cd build || exit 1
+          cp *.conf ../release/
+          cp -r figure ../release/
+          cp LICENSE ../release/
+          cp readme.md ../release/
+      
+      - name: Update lazy rules
+        run: |
+          cd release || exit 1
+          rm lazy.conf lazy_group.conf
+          curl -O https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf
+          curl -O https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf
+        
+      - name: Remove commits
+        run: |
+          cd release || exit 1
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout --orphan latest_branch
+          git add -A
+          git commit -am "Nightly build"
+          git branch -D release
+          git branch -m release
+          git push -f origin release
