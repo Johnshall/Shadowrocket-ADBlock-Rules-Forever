@@ -436,6 +436,7 @@ yahoo.com
 
 # Linkedin
 linkedin.cn
+linkedin.com
 
 # Copilot
 copilot.microsoft.com
