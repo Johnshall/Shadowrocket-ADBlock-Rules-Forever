@@ -88,7 +88,6 @@ mendeley.com
 # news.iadsdk.apple.com
 
 #github
-github.com
 raw.githubusercontent.com
 
 # news
