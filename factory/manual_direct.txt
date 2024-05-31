@@ -15,6 +15,10 @@ cabdirect.org
 ieee.org
 nature.com
 osapublishing.org
+acm.org
+ctan.org
+easychair.org
+softconf.com
 
 #苹果域名及其CDN 直连
 a3.mzstatic.com
