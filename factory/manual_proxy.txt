@@ -72,20 +72,20 @@ vortex.data.microsoft.com
 mendeley.com
 
 #205 APPLE NEWS
-news-events.apple.com
-news-edge.apple.com
-apple.comscoreresearch.com
-play.itunes.apple.com
-play-cdn.itunes-apple.com.akadns.net
-ls.apple.com
-cvws.apple-dns.net
-news.apple-dns.net
-gateway.fe.apple-dns.net
-akamaiedge.net
-gs-loc.apple.com
-bag.itunes.apple.com
-apple.news
-news.iadsdk.apple.com
+# news-events.apple.com
+# news-edge.apple.com
+# apple.comscoreresearch.com
+# play.itunes.apple.com
+# play-cdn.itunes-apple.com.akadns.net
+# ls.apple.com
+# cvws.apple-dns.net
+# news.apple-dns.net
+# gateway.fe.apple-dns.net
+# akamaiedge.net
+# gs-loc.apple.com
+# bag.itunes.apple.com
+# apple.news
+# news.iadsdk.apple.com
 
 #github
 raw.githubusercontent.com
@@ -94,42 +94,42 @@ raw.githubusercontent.com
 vox.com
 
 #苹果域名及其CDN 代理
-adcdownload.apple.com.akadns.net
-appldnld.g.aaplimg.com
-cds-cdn.v.aaplimg.com
-cds.apple.com.akadns.net
-cl1-cdn.origin-apple.com.akadns.net
-cl3-cdn.origin-apple.com.akadns.net
-cl4-cdn.origin-apple.com.akadns.net
-cl5-cdn.origin-apple.com.akadns.net
-clientflow.apple.com.akadns.net
-configuration.apple.com.akadns.net
-dd-cdn.origin-apple.com.akadns.net
-cdn.apple-mapkit.com
-gspe19-cn.ls-apple.com.akadns.net
-gs-loc-cn.apple.com
-gsp10-ssl-cn.ls.apple.com
-icloud-cdn.icloud.com.akadns.net
-init-p01md-lb.push-apple.com.akadns.net
-init-p01st-lb.push-apple.com.akadns.net
-init-s01st-lb.push-apple.com.akadns.net
-gsp85-cn-ssl.ls.apple.com
-itunes-apple.com.akadns.net
-gspe21.ls.apple.com
-mesu-china.apple.com.akadns.net
-mesu-cdn.apple.com.akadns.net
-ocsp-lb.apple.com.akadns.net
-oscdn.origin-apple.com.akadns.net
-pancake.cdn-apple.com.akadns.net
-prod-support.apple-support.akadns.net
-stocks-sparkline-lb.apple.com.akadns.net
-store.storeimages.apple.com.akadns.net
-support-china.apple-support.akadns.net
-swcatalog-cdn.apple.com.akadns.net
-swdist.apple.com.akadns.net
-swscan-cdn.apple.com.akadns.net
-valid.origin-apple.com.akadns.net
-phobos.apple.com
+# adcdownload.apple.com.akadns.net
+# appldnld.g.aaplimg.com
+# cds-cdn.v.aaplimg.com
+# cds.apple.com.akadns.net
+# cl1-cdn.origin-apple.com.akadns.net
+# cl3-cdn.origin-apple.com.akadns.net
+# cl4-cdn.origin-apple.com.akadns.net
+# cl5-cdn.origin-apple.com.akadns.net
+# clientflow.apple.com.akadns.net
+# configuration.apple.com.akadns.net
+# dd-cdn.origin-apple.com.akadns.net
+# cdn.apple-mapkit.com
+# gspe19-cn.ls-apple.com.akadns.net
+# gs-loc-cn.apple.com
+# gsp10-ssl-cn.ls.apple.com
+# icloud-cdn.icloud.com.akadns.net
+# init-p01md-lb.push-apple.com.akadns.net
+# init-p01st-lb.push-apple.com.akadns.net
+# init-s01st-lb.push-apple.com.akadns.net
+# gsp85-cn-ssl.ls.apple.com
+# itunes-apple.com.akadns.net
+# gspe21.ls.apple.com
+# mesu-china.apple.com.akadns.net
+# mesu-cdn.apple.com.akadns.net
+# ocsp-lb.apple.com.akadns.net
+# oscdn.origin-apple.com.akadns.net
+# pancake.cdn-apple.com.akadns.net
+# prod-support.apple-support.akadns.net
+# stocks-sparkline-lb.apple.com.akadns.net
+# store.storeimages.apple.com.akadns.net
+# support-china.apple-support.akadns.net
+# swcatalog-cdn.apple.com.akadns.net
+# swdist.apple.com.akadns.net
+# swscan-cdn.apple.com.akadns.net
+# valid.origin-apple.com.akadns.net
+# phobos.apple.com
 
 # DisneyPlus
 disney.asia
