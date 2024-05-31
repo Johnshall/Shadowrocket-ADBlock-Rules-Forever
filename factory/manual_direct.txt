@@ -128,3 +128,6 @@ cn.bing.com
 
 # 凉屋游戏
 chillyroom.com
+
+# 跨境电商
+jd.hk
