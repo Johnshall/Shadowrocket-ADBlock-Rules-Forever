@@ -467,3 +467,6 @@ mc-heads.net
 # 越狱下载源加速
 apt.thebigboss.org
 repo.chariz.com
+
+# Fandom
+fandom.com
