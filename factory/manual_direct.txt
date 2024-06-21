@@ -130,4 +130,10 @@ cn.bing.com
 chillyroom.com
 
 # 跨境电商
+jd.com
+yiyaojd.com
 jd.hk
+tmall.hk
+tmall.com
+taobao.com
+1688.com
