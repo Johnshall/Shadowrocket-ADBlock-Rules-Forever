@@ -466,3 +466,6 @@ mc-heads.net
 # 越狱下载源加速
 apt.thebigboss.org
 repo.chariz.com
+
+# Discord 邮件里的点击链接，包括新设备登录确认、重置密码等
+click.discord.com
