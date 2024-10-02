@@ -1,10 +1,9 @@
 # 手工定义的 Proxy 列表
 
-#TED
+# TED
 tedcdn.com
 
-
-#Telegram
+# Telegram
 t.me
 tdesktop.com
 telegra.ph
@@ -26,23 +25,20 @@ telesco.pe
 2001:b28:f23c::/48
 2a0a:f280::/32
 
-
-#disqus
+# disqus
 disquscdn.com
 
-
-#50 whatsapp
+# 50 whatsapp
 18.194.0.0/15
 34.224.0.0/12
 
-#54 台湾香港澳门 常用网站
+# 54 台湾香港澳门 常用网站
 appledaily.tw
 
-
-#72 #112 Google Voice
+# 72 #112 Google Voice
 74.125.0.0/16
 
-#85（可能冗余）
+# 85（可能冗余）
 www-google-analytics.l.google.com
 ssl-google-analytics.l.google.com
 partnerad.l.google.com
@@ -53,10 +49,10 @@ mobileads.google.com
 ads.google.com
 afd.l.google.com
 
-#175 华尔街邮报
+# 175 华尔街邮报
 dowjones.com
 
-#180 OneDrive（可能冗余）
+# 180 OneDrive（可能冗余）
 bcbits.com
 ogma.iad.appboy.com
 odc.officeapps.live.com
@@ -68,16 +64,15 @@ gate.hockeyapp.net
 api.onedrive.com
 vortex.data.microsoft.com
 
-#183
+# 183
 mendeley.com
 
-#205 APPLE NEWS
+# 205 APPLE NEWS
 news-events.apple.com
 news-edge.apple.com
 apple.comscoreresearch.com
 play.itunes.apple.com
 play-cdn.itunes-apple.com.akadns.net
-ls.apple.com
 cvws.apple-dns.net
 news.apple-dns.net
 gateway.fe.apple-dns.net
@@ -87,13 +82,13 @@ bag.itunes.apple.com
 apple.news
 news.iadsdk.apple.com
 
-#github
+# github
 raw.githubusercontent.com
 
 # news
 vox.com
 
-#苹果域名及其CDN 代理
+# 苹果域名及其 CDN 代理
 adcdownload.apple.com.akadns.net
 appldnld.g.aaplimg.com
 cds-cdn.v.aaplimg.com
@@ -108,14 +103,11 @@ dd-cdn.origin-apple.com.akadns.net
 cdn.apple-mapkit.com
 gspe19-cn.ls-apple.com.akadns.net
 gs-loc-cn.apple.com
-gsp10-ssl-cn.ls.apple.com
 icloud-cdn.icloud.com.akadns.net
 init-p01md-lb.push-apple.com.akadns.net
 init-p01st-lb.push-apple.com.akadns.net
 init-s01st-lb.push-apple.com.akadns.net
-gsp85-cn-ssl.ls.apple.com
 itunes-apple.com.akadns.net
-gspe21.ls.apple.com
 mesu-china.apple.com.akadns.net
 mesu-cdn.apple.com.akadns.net
 ocsp-lb.apple.com.akadns.net
