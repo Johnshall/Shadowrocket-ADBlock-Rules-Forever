@@ -116,3 +116,6 @@ cn.bing.com
 
 # 凉屋游戏
 chillyroom.com
+
+# IHG Internet Access
+portal.linkbroad.com
