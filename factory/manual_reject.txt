@@ -274,3 +274,9 @@ kikibt8.xyz
 
 #用户提交
 pglstatp-toutiao.com
+
+#豆瓣开屏广告（不影响功能）
+api.douban.com
+
+#知乎开屏广告（不影响功能）
+api.zhihu.com
