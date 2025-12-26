@@ -1,0 +1,131 @@
+name: CI/CD and Maintenance
+
+on:
+  # 定时任务：每天分两个时段执行 (01:30 处理 Issue, 23:00 构建发布)
+  schedule:
+    - cron: "30 1 * * *"
+    - cron: "0 23 * * *"
+
+  # 代码推送时触发构建
+  push:
+    branches:
+      - build
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+
+  # PR 目标为 build 分支时触发
+  pull_request_target:
+    branches:
+      - build
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+
+  # 允许手动触发
+  workflow_dispatch:
+
+jobs:
+  # 任务 1: 关闭不活跃的 Issues
+  close-issues:
+    name: Close Inactive Issues
+    runs-on: ubuntu-latest
+    # 仅在定时任务触发时运行，避免手动或 Push 时运行
+    if: github.event_name == 'schedule'
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-issue-stale: 30
+          days-before-issue-close: 14
+          stale-issue-label: "stale"
+          stale-issue-message: "This issue is stale because it has been open for 30 days with no activity."
+          close-issue-message: "This issue was closed because it has been inactive for 14 days since being marked as stale."
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+  # 任务 2: 构建规则并发布
+  build-and-release:
+    name: Build and Release Rules
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 需要写入权限以推送到分支和创建 Release
+    steps:
+      - name: Checkout Build Branch
+        uses: actions/checkout@v4
+        with:
+          ref: build
+          path: build
+
+      - name: Checkout Release Branch
+        uses: actions/checkout@v4
+        with:
+          ref: release
+          path: release
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install requirements
+        run: pip3 install -r build/requirements.txt
+
+      - name: Build Rules
+        run: |
+          cd build || exit 1
+          ./factory/auto_build.sh
+    
+      - name: Move files
+        run: |
+          cd build || exit 1
+          cp *.conf ../release/
+          cp -r figure ../release/
+          cp LICENSE ../release/
+          cp readme.md ../release/
+    
+      - name: Update lazy rules
+        run: |
+          cd release || exit 1
+          rm -f lazy.conf lazy_group.conf
+          curl -O https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy.conf
+          curl -O https://raw.githubusercontent.com/LOWERTOP/Shadowrocket/main/lazy_group.conf
+      
+      - name: Commit and Push to Release Branch
+        run: |
+          cd release || exit 1
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # 使用 --orphan 创建无历史记录的新分支，保持 Release 分支干净
+          git checkout --orphan latest_branch
+          git add -A
+          git commit -am "Nightly build @ $(date +'%Y-%m-%d %H:%M:%S')"
+          
+          # 强制重命名并推送
+          git branch -D release || true # 防止首次运行时分支不存在报错
+          git branch -m release
+          git push -f origin release
+
+      - name: Create GitHub Release (Auto Publish)
+        # 仅在定时任务触发时创建 Release，避免每次 Push 都生成新版本
+        if: github.event_name == 'schedule'
+        uses: softprops/action-gh-release@v1
+        with:
+          # 使用 Run Number 或日期作为标签，这里使用 Run Number 保证唯一性
+          tag_name: nightly-${{ github.run_number }}
+          name: Nightly Build ${{ github.run_number }}
+          body: |
+            Automated nightly release.
+            **Changes:**
+            - Updated rules from build branch.
+            - Synced lazy rules.
+          files: |
+            release/*.conf
+          prerelease: true # 标记为预发布版本
+          fail_on_unmatched_files: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
