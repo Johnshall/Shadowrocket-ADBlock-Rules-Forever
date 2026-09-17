@@ -48,7 +48,7 @@ clientflow.apple.com
 configuration.apple.com
 cstat.apple.com
 download.developer.apple.com
-ls.apple.com
+gspe19-cn-ssl.ls.apple.com
 gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
 gsp4-cn.ls.apple.com.edgekey.net
 iadsdk.apple.com

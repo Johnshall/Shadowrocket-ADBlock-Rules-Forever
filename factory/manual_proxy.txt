@@ -101,7 +101,6 @@ clientflow.apple.com.akadns.net
 configuration.apple.com.akadns.net
 dd-cdn.origin-apple.com.akadns.net
 cdn.apple-mapkit.com
-gspe19-cn.ls-apple.com.akadns.net
 gs-loc-cn.apple.com
 icloud-cdn.icloud.com.akadns.net
 init-p01md-lb.push-apple.com.akadns.net
