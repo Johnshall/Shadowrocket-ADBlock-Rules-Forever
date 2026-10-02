@@ -47,7 +47,10 @@ cl4.apple.com
 clientflow.apple.com
 configuration.apple.com
 cstat.apple.com
+developer.apple.com
 download.developer.apple.com
+ocsp2.apple.com
+ppq.apple.com
 ls.apple.com
 gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
 gsp4-cn.ls.apple.com.edgekey.net
