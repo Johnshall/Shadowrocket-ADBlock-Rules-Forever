@@ -119,3 +119,12 @@ chillyroom.com
 
 # IHG Internet Access
 portal.linkbroad.com
+
+# 微信收发图片和文件直连
+# sgshort / sgminorshort / sglong 都在 wechat.com 下，不在 .cn 后缀里
+wechat.com
+weixin.qq.com
+weixinbridge.com
+qpic.cn
+qlogo.cn
+servicewechat.com
