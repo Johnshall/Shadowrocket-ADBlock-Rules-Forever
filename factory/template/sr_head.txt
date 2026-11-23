@@ -5,8 +5,25 @@
 [General]
 # 默认关闭 ipv6 支持，如果需要请手动开启
 ipv6 = false
-bypass-system = true
+prefer-ipv6 = false
+bypass-system = false
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, fe80::/10, fc00::/7, localhost, *.local, *.lan, *.internal, e.crashlytics.com, captive.apple.com, sequoia.apple.com, seed-sequoia.siri.apple.com, *.ls.apple.com
 bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,233.252.0.0/24,224.0.0.0/4,255.255.255.255/32,::1/128,::ffff:0:0/96,::ffff:0:0:0/96,64:ff9b::/96,64:ff9b:1::/48,100::/64,2001::/32,2001:20::/28,2001:db8::/32,2002::/16,3fff::/20,5f00::/16,fc00::/7,fe80::/10,ff00::/8
-dns-server = https://dns.alidns.com/dns-query, https://doh.pub/dns-query
+# Strict DNS: use encrypted resolvers THROUGH the selected proxy, including DIRECT domains.
+# This protects ordinary local lookups; PROXY domains normally resolve at the exit.
+dns-server = https://dns.google/dns-query#proxy
+direct-dns-server = https://dns.google/dns-query#proxy
+fallback-dns-server = https://cloudflare-dns.com/dns-query#proxy
+# Bootstrap exception: a proxy node named by hostname cannot resolve through itself.
+# Prefer node IP addresses for zero local bootstrap DNS; otherwise this DoH may use
+# the direct network and the resolver's region may appear in DNS leak measurements.
+proxy-dns-server = https://dns.alidns.com/dns-query#no-h3
+dns-direct-system = false
+dns-fallback-system = false
+dns-direct-fallback-proxy = false
+always-ip-address = false
+# Capture known hard-coded UDP/53 public DNS; preserve local/AD DNS connectivity.
+hijack-dns = 8.8.8.8:53,8.8.4.4:53,1.1.1.1:53,1.0.0.1:53,9.9.9.9:53,208.67.222.222:53,208.67.220.220:53,223.5.5.5:53,223.6.6.6:53,119.29.29.29:53,114.114.114.114:53
+# Do not silently send unsupported proxied UDP traffic directly.
+udp-policy-not-supported-behaviour = REJECT
 [Rule]

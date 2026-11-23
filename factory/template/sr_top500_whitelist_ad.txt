@@ -10,21 +10,21 @@
 {{ad}}
 {{manual_reject}}
 
-{{manual_direct}}
-{{manual_proxy}}
+{{manual_direct_no_resolve}}
+{{manual_proxy_no_resolve}}
 
-{{top500_direct}}
+{{top500_direct_no_resolve}}
 
 DOMAIN-SUFFIX,cn,DIRECT
-GEOIP,CN,DIRECT
+GEOIP,CN,DIRECT,no-resolve
 
-IP-CIDR,192.168.0.0/16,DIRECT
-IP-CIDR,10.0.0.0/8,DIRECT
-IP-CIDR,172.16.0.0/12,DIRECT
-IP-CIDR,127.0.0.0/8,DIRECT
-IP-CIDR,fe80::/10,DIRECT
-IP-CIDR,fc00::/7,DIRECT
-IP-CIDR,::1/128,DIRECT
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,fe80::/10,DIRECT,no-resolve
+IP-CIDR,fc00::/7,DIRECT,no-resolve
+IP-CIDR,::1/128,DIRECT,no-resolve
 
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AppleNews/AppleNews.list,PROXY
 

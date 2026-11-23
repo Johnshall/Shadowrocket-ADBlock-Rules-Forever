@@ -20,7 +20,7 @@ confs_names = [
 ]
 
 
-def getRulesStringFromFile(path, kind):
+def getRulesStringFromFile(path, kind, no_resolve=False):
     file = open(path, 'r', encoding='utf-8')
     contents = file.readlines()
     ret = ''
@@ -45,7 +45,10 @@ def getRulesStringFromFile(path, kind):
             elif '.' not in content and len(content) > 1:
                 prefix = 'DOMAIN-KEYWORD'
 
-            ret += prefix + ',%s,%s\n' % (content, kind)
+            # IP rules should not cause an extra local DNS lookup when the
+            # whitelist is configured to fall through to FINAL,PROXY.
+            suffix = ',no-resolve' if no_resolve and prefix == 'IP-CIDR' else ''
+            ret += prefix + ',%s,%s%s\n' % (content, kind, suffix)
 
     return ret
 
@@ -68,6 +71,11 @@ values['ad'] = getRulesStringFromFile('resultant/ad.list', 'Reject')
 values['manual_direct'] = getRulesStringFromFile('manual_direct.txt', 'Direct')
 values['manual_proxy']  = getRulesStringFromFile('manual_proxy.txt', 'Proxy')
 values['manual_reject'] = getRulesStringFromFile('manual_reject.txt', 'Reject')
+
+# Dedicated variants keep existing matching behaviour in non-whitelist profiles.
+values['manual_direct_no_resolve'] = getRulesStringFromFile('manual_direct.txt', 'Direct', no_resolve=True)
+values['manual_proxy_no_resolve'] = getRulesStringFromFile('manual_proxy.txt', 'Proxy', no_resolve=True)
+values['top500_direct_no_resolve'] = getRulesStringFromFile('resultant/top500_direct.list', 'Direct', no_resolve=True)
 
 values['gfwlist'] = getRulesStringFromFile('resultant/gfw.list', 'Proxy') \
                   + getRulesStringFromFile('manual_gfwlist.txt', 'Proxy')

@@ -1,27 +1,32 @@
+
 #
-# 白名单中包含了境外网站中可以访问的那些，对不确定的网站则尽可能地代理。
-#
-# 直连：top500 网站中可直连的境外网站、中国网站
-# 代理：默认代理其余的所有境外网站
+# 白名单中包含可直连的境外网站、中国网站
+# 未知网站默认通过代理访问
 # 不包含广告过滤
 #
 
-{{manual_direct}}
-{{manual_proxy}}
+{{manual_direct_no_resolve}}
+{{manual_proxy_no_resolve}}
 
-{{top500_direct}}
+{{top500_direct_no_resolve}}
 
+# 中国域名直连
 DOMAIN-SUFFIX,cn,DIRECT
-GEOIP,CN,DIRECT
 
-IP-CIDR,192.168.0.0/16,DIRECT
-IP-CIDR,10.0.0.0/8,DIRECT
-IP-CIDR,172.16.0.0/12,DIRECT
-IP-CIDR,127.0.0.0/8,DIRECT
-IP-CIDR,fe80::/10,DIRECT
-IP-CIDR,fc00::/7,DIRECT
-IP-CIDR,::1/128,DIRECT
+# 禁止为 GEOIP 规则提前进行 DNS 解析
+GEOIP,CN,DIRECT,no-resolve
 
+# 私有网络及回环地址
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,fe80::/10,DIRECT,no-resolve
+IP-CIDR,fc00::/7,DIRECT,no-resolve
+IP-CIDR,::1/128,DIRECT,no-resolve
+
+# Apple News 代理
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AppleNews/AppleNews.list,PROXY
 
+# 未命中规则的连接默认代理
 FINAL,PROXY
