@@ -5,10 +5,10 @@
 # 不包含广告过滤
 #
 
-{{manual_direct}}
-{{manual_proxy}}
+{{manual_direct_no_resolve}}
+{{manual_proxy_no_resolve}}
 
-{{top500_direct}}
+{{top500_direct_no_resolve}}
 
 # 中国域名直连
 DOMAIN-SUFFIX,cn,DIRECT
